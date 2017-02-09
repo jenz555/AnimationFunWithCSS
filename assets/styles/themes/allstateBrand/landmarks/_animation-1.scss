@@ -1,0 +1,128 @@
+///CSS - first round
+.CSS__hero--outer {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.CSS__hero--inner {
+  position: relative;
+  display: inline-block;
+  white-space: nowrap;
+  vertical-align: middle;
+  width: 100%;
+  height: 160px;
+  background-image: url('../images/towScene_bkg_2.png');
+  overflow: hidden;
+  background-position: 0px 0px;
+	background-repeat: repeat-x;
+	animation: animatedBackgroundCSS 2s linear 1;
+  -ms-animation: animatedBackgroundCSS 2s linear 1;
+  -moz-animation: animatedBackgroundCSS 2s linear 1;
+  -webkit-animation: animatedBackgroundCSS 2s linear 1;
+  
+  z-index: $zIndex-9;
+}
+
+@keyframes animatedBackgroundCSS {
+	from { background-position: 100% 0; }
+	to { background-position: 0 0; }
+}
+
+.CSS__hero--towTruck {
+    width: 100%;
+    height: 160px;
+    position: relative;
+    overflow: hidden;
+    background-image: url('../images/towTruck.png');
+    background-repeat: no-repeat;
+    animation: animatedTruckCSS 2s linear 1;
+    -ms-animation: animatedTruckCSS 2s linear 1;
+    -moz-animation: animatedTruckCSS 2s linear 1;
+    -webkit-animation: animatedTruckCSS 2s linear 1;
+    z-index: $zIndex-9;
+    animation-fill-mode: forwards;
+}
+
+
+
+@keyframes animatedTruckCSS {
+	from { background-position: 130% 110%; }
+	to { background-position: 50% 110%;}
+}
+
+@keyframes fadeIn {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+
+.CSS__hero--title {
+    position: absolute;
+    z-index: 1002;
+    width: 100%;
+    margin: 0 auto;
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    	animation: animatedTitleCSS 3s linear 1;
+  -ms-animation: animatedTitleCSS 3s linear 1;
+  -moz-animation: animatedTitleCSS 3s linear 1;
+  -webkit-animation: animatedTitleCSS 3s linear 1;
+}
+
+@keyframes animatedTitleCSS {
+	from { opacity: 0;}
+	to { opacity: 1; }
+}
+
+.CSS__wheel--1,
+.CSS__wheel--2 {
+    width: 22px;
+    height: 21px;
+    position: absolute;
+    background-image: url('../images/towTruck_wheel.png');
+    background-repeat: no-repeat;
+      z-index: $zIndex-10;
+    transform-origin: center center;
+    animation-fill-mode: forwards;
+}
+
+.CSS__wheel--1 {
+  	animation: animatedWheelCSS 2s linear 1;
+  -ms-animation: animatedWheelCSS 2s linear 1;
+  -moz-animation: animatedWheelCSS 2s linear 1;
+  -webkit-animation: animatedWheelCSS 2s linear 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes animatedWheelCSS {
+  from { 
+    top: 80%;
+    left: 104%;
+    transform: rotate(0deg);
+    transform-origin: center center; 
+  }
+  to { 
+    top: 80%;
+    left: 55.6%;
+    transform: rotate(360deg);
+    transform-origin: center center; 
+  }
+}
+
+.CSS__wheel--1 {
+  left: 82.9%;
+  top: 73%;
+}
+
+.CSS__wheel--2 { 
+  left: 104%;
+  top: 73%;
+}
+///CSS

@@ -1,0 +1,136 @@
+// ------------------------
+//  INFORMATION
+// ------------------------
+// Important: Do not change these core files. Any changes should be
+//            added to a theme file. Example '/themes/_accordion.scss'
+//
+// Description: Accordions are used to show/hide content in a vertical pattern.
+//              Checkbox accordions can have all content opened at the same time,
+//              whereas radio accordions can only have opened at a time.
+//
+//
+// ------------------------
+//  EXAMPLES
+// ------------------------
+//
+//    <div class="accordion__toggle">
+//        <input  class="accordion__toggle__checkbox" type="checkbox" id="box1" name="box">
+//        <label class="accordion__toggle__header" for="box1">First Box</label>
+//        <div class="accordion__content"></div>
+//    </div>
+
+//    <div class="accordion__toggle">
+//        <input class="accordion__toggle__checkbox" type="radio" id="box2" name="box">
+//        <label class="accordion__toggle__header" for="box2">Second Box</label>
+//        <div class="accordion__content"></div>
+//    </div>
+//
+// http://ux.allstate.com/ux/Allstate-Style-Guide/#/components/accordions
+//
+//
+// ------------------------
+//  APPENDIX
+// ------------------------
+//
+//
+//
+
+
+.accordion {
+
+}
+
+.accordion__content {
+
+  position: relative;
+  height: 0;
+  margin: 0;
+  max-height: 0rem;
+  overflow: hidden;
+  display: block;
+  background-color: $blue-2;
+
+  &:target {
+    height: auto;
+    max-height: 100rem;
+
+
+  }
+}
+
+.accordion__toggle--hover {
+  &:hover {
+    .accordion__content {
+      height: auto;
+      max-height: 100rem;
+      @include transition(all, 2s, linear);
+    }
+  }
+}
+
+.accordion__toggle__checkbox {
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
+
+  &:checked ~ .accordion__content {
+    height: auto;
+    max-height: 1000rem;
+    //.borderRadiusAsymmetric(0px,0px,6px,6px);
+    @include transition(all, 20s, linear);
+  }
+
+  &:checked ~ .accordion__toggle__header {
+    //.borderRadiusAsymmetric(6px,6px,0px,0px);
+    .accordion__toggle--icon {
+      @include transform(rotate(-90deg));
+    }
+  }
+}
+
+.accordion__toggle__header {
+  background-color: $blue-4;
+  @include border-radius(6px);
+  padding: 10px 12px;
+  color: $white;
+  display: block;
+  border-bottom: 1px solid darken($blue-4, 10%);
+
+  @include transition(all, 0.25s, linear);
+
+  &:hover,
+  &:active,
+  &:focus {
+    cursor: pointer;
+    background-color: lighten($blue-4, 3%);
+  }
+}
+
+.accordion__toggle {
+  display: block;
+  @include border-radius(6px);
+}
+
+.accordion__toggle--icon {
+  width:    0px;
+  height:   0px;
+  display:  inline-block;
+  position: relative;
+  top:      3px;
+  border-style: solid;
+  border-width: 7px 0 7px 8px;
+  border-color: transparent transparent transparent $white;
+  float: right;
+
+  @include border-radius(0);
+  @include transition(all, 0.25s, linear);
+  @include transform(rotate(90deg));
+}
+
+.icon--circle.icon--tertiary {
+  border-color: $blue-4;
+}

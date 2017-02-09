@@ -1,0 +1,53 @@
+// ------------------------
+//  INFORMATION
+// ------------------------
+// Important: Do not change these core files. Any changes should be
+//            added to a theme file. Example '/themes/txt.scss'
+//
+// Description: these hdg and hdg--[x] components are used to create text headers.
+//
+// ------------------------
+//  EXAMPLES
+// ------------------------
+//
+//
+//
+// in process of being deprecated
+//
+//    <h1 class="display display--36">H1 Heading (2.25rem | 36px)</h1>
+//    <h2 class="display display--28">H2 Heading (1.625rem | 28px)</h2>
+//    <h3 class="display display--24">H3 Heading (1.5rem | 24px)</h3>
+//    <h4 class="display display--20">H4 Heading (1.25rem| 20px)</h4>
+//    <h5 class="display display--18">H5 Heading (1.125rem | 18px)</h5>
+//    <h6 class="display display--16">H6 Heading (1rem | 16px)</h6>
+//
+// http://ux.allstate.com/ux/Allstate-Style-Guide/#/components/headings
+//
+//
+// ------------------------
+//  APPENDIX
+// ------------------------
+//
+// .1 changing allstate sans to bold blurs it. keep normal
+//
+
+
+.display {
+	font-family: $font-brand;
+}
+
+.display--light {
+	font-family: $font-brand-light;
+}
+
+.display--medium {
+	font-family: $font-brand-medium;
+}
+
+.display--bold {
+	font-family: $font-brand-bold;
+}
+
+.display--black {
+	font-family: $font-brand-black;
+}

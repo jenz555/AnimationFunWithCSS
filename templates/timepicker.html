@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<!--[if lte IE 8 ]> <html class="ie" lang="en"> <![endif]-->
+<!--[if IE 9 ]> <html class="ie ie9" lang="en"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+<title>Allstate User Interface Toolkit Starter Time Picker Template</title>
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="../assets/styles/app.css" />
+<script src="../assets/scripts/libs/aic-1.6.0.min.js"></script>
+<script src="../assets/scripts/global.js"></script>
+<script src="../assets/scripts/utilities.js"></script>
+<script src="../assets/scripts/timepicker.plugin.js"></script>
+<script type="text/javascript">
+  $(function () {
+    // BEGIN TIMEPICKER TEMPLATE
+
+    // Scheduler-style timepickers
+    // -----------------------------
+    $('#timepicker-1').timepicker({
+      type: 'scheduler'
+    });
+    $('#timepicker-2').timepicker({
+      type: 'scheduler',
+      minuteIncrements: 15
+    });
+    $('#timepicker-3').timepicker({
+      type: 'scheduler',
+      blockOutTimes: [
+        ['7:00am','8:00am'],
+        ['10:30am','11:30am'],
+        ['3:30pm','4:30pm']
+      ]
+    });
+    $('#timepicker-4').timepicker({
+      type: 'scheduler',
+      showSetToNow: true
+    });
+
+    // Dropdown-style timepickers
+    // -----------------------------
+    $('#timepicker-5').timepicker();
+    $('#timepicker-6').timepicker({ step: true });
+    $('#timepicker-7').timepicker({ blockOutTimes: ['9:00am', '10:00am', '11:00am', '12:00pm'] });
+    $('#timepicker-8').timepicker({ timezone: 'CST' });
+    $('#timepicker-9').timepicker({ "startTime": "9:00am", "endTime": "5:00pm" });
+    $('#timepicker-10').timepicker({ interval: 15 });
+    $('#timepicker-11').timepicker({ interval: 30 });
+    // END TIMEPICKER TEMPLATE
+  });
+</script>
+</head>
+<body>
+    <div class="vr">
+        <div class="box">
+            <div class="txt txt--centered">
+                <h1 class="hero__h1">Allstate<sup>&copy;</sup> User Interface Time Picker Template</h1>
+            </div>
+        </div>
+    </div>
+    <div class="vr">
+        <div class="wrapper">
+
+          <div class="vr--x2">
+              <h3 class="display display--20 display--bold">Appendix:</h3>
+          </div>
+
+          <table class="table table--appendix vr">
+            <thead>
+                <tr>
+                    <th>Option</th>
+                    <th>Type</th>
+                    <th>Default</th>
+                    <th>Details</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="table__rowHeading">
+                  <td class="txt--bold" colspan="4">Scheduler-Style Timepicker</td>
+                </tr>
+                <tr>
+                    <td data-th="Option">onload</td>
+                    <td data-th="Type">boolean</td>
+                    <td data-th="Default">false</td>
+                    <td data-th="Details">If set to true, timepicker will open on page load.</td>
+                </tr>
+                <tr>
+                    <td data-th="Option">showSetToNow</td>
+                    <td data-th="Type">boolean</td>
+                    <td data-th="Default">false</td>
+                    <td data-th="Details">If set to true, a button will appear below the timepicker input allowing the user to set the value as the current time.</td>
+                </tr>
+                <tr>
+                    <td data-th="Option">modifierClass</td>
+                    <td data-th="Type">string</td>
+                    <td data-th="Default">''</td>
+                    <td data-th="Details">Can be used to set a modifier class on the parent container.</td>
+                </tr>
+                <tr>
+                    <td data-th="Option">defaultTimeZone</td>
+                    <td data-th="Type">string</td>
+                    <td data-th="Default">Timezone specified by computer.</td>
+                    <td data-th="Details">Default time zone is based off of user's computer.</td>
+                </tr>
+                <tr>
+                    <td data-th="Option">timezones</td>
+                    <td data-th="Type">array</td>
+                    <td data-th="Default">[]</td>
+                    <td data-th="Details">Can be overrriden with any array of objects containing time zone key/value pair. <br>Eg. <code>[{ 'EST': 'Eastern Standard Time' }]</code></td>
+                </tr>
+                <tr>
+                    <td data-th="Option">minuteIncrements</td>
+                    <td data-th="Type">number</td>
+                    <td data-th="Default">5</td>
+                    <td data-th="Details">Can be overridden to set the minute increments in the timepicker. Can be set to 1, 5, 15, 30 or 45.</td>
+                </tr>
+                <tr class="table__rowHeading">
+                  <td class="txt--bold" colspan="4">Dropdown-Style Timepicker</td>
+                </tr>
+                <tr>
+                    <td data-th="Option">modifierClass</td>
+                    <td data-th="Type">null</td>
+                    <td data-th="Default">string</td>
+                    <td data-th="Details">Appends a modifier class to the timepicker wrapper.</td>
+                </tr>
+                <tr>
+                    <td data-th="Option">selectedStartTime</td>
+                    <td data-th="Type">null</td>
+                    <td data-th="Default">string</td>
+                    <td data-th="Details">Default selected start time for a time range.</td>
+                </tr>
+                <tr>
+                    <td data-th="Option">selectedEndTime</td>
+                    <td data-th="Type">null</td>
+                    <td data-th="Default">string</td>
+                    <td data-th="Details">Default selected end time for a time range.</td>
+                </tr>
+                <tr>
+                    <td data-th="Option">blockOutTimes</td>
+                    <td data-th="Type">array</td>
+                    <td data-th="Default">[]</td>
+                    <td data-th="Details">Array of times that will be excluded from timepicker.</td>
+                </tr>
+                <tr>
+                    <td data-th="Option">startTime</td>
+                    <td data-th="Type">string</td>
+                    <td data-th="Default">12:00am</td>
+                    <td data-th="Details">Default start time - first selectable option.</td>
+                </tr>
+                <tr>
+                    <td data-th="Option">endTime</td>
+                    <td data-th="Type">string</td>
+                    <td data-th="Default">11:00pm</td>
+                    <td data-th="Details">Default end time - last selectable option.</td>
+                </tr>
+                <tr>
+                    <td data-th="Option">interval</td>
+                    <td data-th="Type">number</td>
+                    <td data-th="Default">60</td>
+                    <td data-th="Details">Can be set to show 15, 30 or 60 minute time intervals.</td>
+                </tr>
+                <tr>
+                    <td data-th="Option">step</td>
+                    <td data-th="Type">boolean</td>
+                    <td data-th="Default">false</td>
+                    <td data-th="Details">If set to true, two TimePicker dropdowns will be displayed.</td>
+                </tr>
+            </tbody>
+          </table>
+
+          <table class="table table--appendix">
+              <thead>
+                  <tr>
+                      <th>Callback</th>
+                      <th>Details</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr class="table__rowHeading">
+                    <td class="txt--bold" colspan="4">Scheduler-Style Timepicker</td>
+                  </tr>
+                  <tr>
+                      <td data-th="Callback">onShow</td>
+                      <td data-th="Details">Triggers a callback when the timepicker is opened.</td>
+                  </tr>
+                  <tr>
+                      <td data-th="Callback">onHide</td>
+                      <td data-th="Details">Triggers a callback when the timepicker is closed.</td>
+                  </tr>
+              </tbody>
+          </table>
+
+          <hr />
+
+            <div class="vr--x2">
+                <div class="box box--framed">
+                    <div class="vr--x2">
+                        <h3 class="display display--20 display--bold">Dependencies:</h3>
+                    </div>
+                    <ul class="uList">
+                        <li>
+                            <a href="http://jquery.com/" target="_blank">
+                                <strong>Aic JS Framework</strong><br />
+                                <code>&lt;script src="../assets/scripts/libs/aic-1.6.0.min.js"&gt;&lt;/script&gt;</code>
+                            </a>
+                        </li>
+                        <li>
+                            <strong>global.js</strong><br />
+                            <code>&lt;script src="../assets/scripts/global.js"&gt;&lt;/script&gt;</code>
+                        </li>
+                        <li>
+                            <strong>utilities.js</strong><br />
+                            <code>&lt;script src="../assets/scripts/utilities.js"&gt;&lt;/script&gt;</code>
+                        </li>
+                        <li>
+                            <strong>timepicker.plugin.js</strong><br />
+                            <code>&lt;script src="../assets/scripts/timepicker.plugin.js"&gt;&lt;/script&gt;</code>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="vr--x2">
+                <h3 class="display display--20 display--bold">Scheduler-Style Timepicker 5 Minute Intervals (Default) Template:</h3>
+            </div>
+            <!-- BEGIN TIMEPICKER TEMPLATE -->
+						<input id="timepicker-1" class="input input--timepicker" tabindex="1" class="input" type="text" />
+            <!-- END TIMEPICKER TEMPLATE -->
+
+            <hr />
+
+            <div class="vr--x2">
+                <h3 class="display display--20 display--bold">Scheduler-Style Timepicker 15 Minute Intervals Template:</h3>
+            </div>
+
+            <!-- BEGIN TIMEPICKER TEMPLATE -->
+						<input id="timepicker-2" class="input input--timepicker" tabindex="2" class="input" type="text" />
+            <!-- END TIMEPICKER TEMPLATE -->
+
+            <hr />
+
+            <div class="vr--x2">
+                <h3 class="display display--20 display--bold">Scheduler-Style Timepicker Blocked Out Times Template:</h3>
+            </div>
+
+            <!-- BEGIN TIMEPICKER TEMPLATE -->
+						<input id="timepicker-3" class="input input--timepicker" tabindex="3" class="input" type="text" />
+            <!-- END TIMEPICKER TEMPLATE -->
+
+            <hr />
+
+            <div class="vr--x2">
+                <h3 class="display display--20 display--bold">Scheduler-Style Timepicker "Set to current Time" Enabled Template:</h3>
+            </div>
+            <!-- BEGIN TIMEPICKER TEMPLATE -->
+						<input id="timepicker-4" class="input input--timepicker" tabindex="4" class="input" type="text" />
+            <!-- END TIMEPICKER TEMPLATE -->
+
+            <hr />
+
+            <div class="vr--x2">
+                <h3 class="display display--20 display--bold">Timepicker Dropdown Template:</h3>
+            </div>
+            <!-- BEGIN TIMEPICKER TEMPLATE -->
+            <div id="timepicker-5" class="timepicker"></div>
+            <!-- END TIMEPICKER TEMPLATE -->
+
+            <hr />
+
+            <div class="vr--x2">
+                <h3 class="display display--20 display--bold">Stepped Timepicker Dropdown Template:</h3>
+            </div>
+            <!-- BEGIN TIMEPICKER TEMPLATE -->
+            <div id="timepicker-6" class="timepicker"></div>
+            <!-- END TIMEPICKER TEMPLATE -->
+
+            <hr />
+
+            <div class="vr--x2">
+                <h3 class="display display--20 display--bold">Timepicker Dropdown with Blocked out Times Template:</h3>
+            </div>
+            <!-- BEGIN TIMEPICKER TEMPLATE -->
+            <div id="timepicker-7" class="timepicker"></div>
+            <!-- END TIMEPICKER TEMPLATE -->
+
+            <hr />
+
+            <div class="vr--x2">
+                <h3 class="display display--20 display--bold">Timepicker Dropdown with Timezone Template:</h3>
+            </div>
+            <!-- BEGIN TIMEPICKER TEMPLATE -->
+            <div id="timepicker-8" class="timepicker"></div>
+            <!-- END TIMEPICKER TEMPLATE -->
+
+            <hr />
+
+            <div class="vr--x2">
+                <h3 class="display display--20 display--bold">Timepicker Dropdown with Set Time Range Template:</h3>
+            </div>
+            <!-- BEGIN TIMEPICKER TEMPLATE -->
+            <div id="timepicker-9" class="timepicker"></div>
+            <!-- END TIMEPICKER TEMPLATE -->
+
+            <hr />
+
+            <div class="vr--x2">
+                <h3 class="display display--20 display--bold">Timepicker Dropdown with 15 Minute Intervals Template:</h3>
+            </div>
+            <!-- BEGIN TIMEPICKER TEMPLATE -->
+            <div id="timepicker-10" class="timepicker"></div>
+            <!-- END TIMEPICKER TEMPLATE -->
+
+            <hr />
+
+            <div class="vr--x2">
+                <h3 class="display display--20 display--bold">Timepicker Dropdown with 30 Minute Intervals Template:</h3>
+            </div>
+            <!-- BEGIN TIMEPICKER TEMPLATE -->
+            <div id="timepicker-11" class="timepicker"></div>
+            <!-- END TIMEPICKER TEMPLATE -->
+
+        </div>
+    </div>
+</body>
+</html>

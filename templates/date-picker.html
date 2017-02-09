@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--[if lte IE 8 ]> <html class="ie" lang="en"> <![endif]-->
+<!--[if IE 9 ]> <html class="ie ie9" lang="en"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+<title>Allstate User Interface Toolkit Starter Date Picker Template</title>
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="../assets/styles/app.css" />
+</head>
+<body>
+    <div class="vr">
+        <div class="box">
+            <div class="txt txt--centered">
+                <h1 class="hero__h1">Allstate<sup>&copy;</sup> User Interface Toolkit Date Picker Template</h1>
+            </div>
+        </div>
+    </div>
+    <div class="vr">
+        <div class="wrapper">
+            <div class="vr">
+                <div class="box box--dusty">
+                    <div class="vr--x2">
+                        <h3 class="display display--20 display--bold">Dependencies:</h3>
+                    </div>
+                    <ul class="uList">
+                        <li>
+                            <a href="http://jquery.com/" target="_blank">
+                                <strong>Aic JS Framework</strong><br />
+                                <code>&lt;script src="../assets/scripts/libs/aic-1.6.0.min.js"&gt;&lt;/script&gt;</code>
+                            </a>
+                        </li>
+                        <li>
+                            <strong>flexDialog.js</strong><br />
+                            <code>&lt;script src="../assets/scripts/datepicker_plugin.js"&gt;&lt;/script&gt;</code>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr />
+
+            <div class="vr--x2">
+                <h3 class="display display--20 display--bold">Template:</h3>
+            </div>
+            <!-- BEGIN DATE PICKER TEMPLATE -->
+            <label for="dtCreated" class="label">Date Created</label>
+            <div class="datepicker js-datepicker">
+                <input id="dtCreated" class="input input--txt input--lg js-dateInput js-dateMask" type="text" placeholder="MM-DD-YYYY"/>
+                <button type="button" class="datepicker__btn js-datepickerTrigger">Select Date</button>
+
+                <div class="calendar js-datepickerTarget" aria-hidden="true">
+                    <div id="month-wrap">
+                        <button class="calendar__btn calendar__btn--prev" tabindex="0">go to previous month</button>
+                        <div class="calendar__month" role="heading" aria-live="assertive" aria-atomic="true">January 2015</div>
+                        <button class="calendar__btn calendar__btn--next" tabindex="0">go to next month</button>
+
+                    </div>
+                    <table class="calendar__table" role="grid" aria-activedescendant="errMsg" aria-labelledby="month" tabindex="0">
+                        <thead>
+                            <tr class="calendar__table__weekdays">
+                                <th id="Sunday"><abbr title="Sunday">Sun</abbr></th>
+                                <th id="Monday"><abbr title="Monday">Mon</abbr></th>
+                                <th id="Tuesday"><abbr title="Tuesday">Tue</abbr></th>
+                                <th id="Wednesday"><abbr title="Wednesday">Wed</abbr></th>
+                                <th id="Thursday"><abbr title="Thursday">Thu</abbr></th>
+                                <th id="Friday"><abbr title="Friday">Fri</abbr></th>
+                                <th id="Saturday"><abbr title="Saturday">Sat</abbr></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td id="errMsg" colspan="7">Javascript must be enabled</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- END DATE PICKER TEMPLATE -->
+        </div>
+    </div>
+
+    <script src="../assets/scripts/libs/aic-1.6.0.min.js"></script>
+    <script src="../assets/scripts/datepicker_plugin.js"></script>
+</body>
+</html>

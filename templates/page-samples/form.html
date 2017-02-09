@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<!--[if lte IE 8 ]> <html class="ie" lang="en"> <![endif]-->
+<!--[if IE 9 ]> <html class="ie ie9" lang="en"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+<title>Allstate User Interface Toolkit Form Template</title>
+<link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="../../assets/styles/app.css" />
+</head>
+<body>
+    <div class="vr">
+        <div class="box">
+            <div class="txt txt--centered">
+                <h1 class="hero__h1">Allstate<sup>&copy;</sup> User Interface Toolkit Form Template</h1>
+            </div>
+        </div>
+    </div>
+    <div class="vr">
+        <div class="wrapper">
+            <div class="grid grid--centered">
+                <div class="grid__col grid__col--10of12--large">
+
+
+                    <div class="wrapper">
+                        <!-- BEGIN FORM TEMPLATE -->
+                        <p>Please enter your information below.</p>
+                        <p>
+                            <strong>All fields are required.</strong>
+                        </p>
+
+                        <form id="formExample" name="form1" action="" method="post">
+                            <fieldset>
+                                <div class="vList">
+                                    <div>
+                                        <div class="grid">
+                                            <div class="grid__col grid__col--8of12 grid__col--10of12--medium">
+                                                <label for="firstName" class="label">First Name</label>
+                                                <input type="text" name="firstName" id="firstName" class="input" />
+                                            </div>
+                                            <div class="grid__col grid__col--4of12 grid__col--2of12--medium">
+                                                <label for="mi" class="label">MI</label>
+                                                <input type="text" name="mi" id="mi" maxlength="1" class="input" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="grid">
+                                            <div class="grid__col grid__col--8of12 grid__col--10of12--medium">
+                                                <label for="lastName" class="label">Last Name</label>
+                                                <input type="text" name="lastName" id="lastName" class="input" />
+                                            </div>
+                                            <div class="grid__col grid__col--4of12 grid__col--2of12--medium">
+                                                <label for="suffix" class="label">Suffix</label>
+                                                <div class="select">
+                                                    <select class="select__menu" name="suffix" id="suffix">
+                                                        <option selected>None</option>
+                                                        <option>Sr.</option>
+                                                        <option>Jr.</option>
+                                                        <option>II</option>
+                                                        <option>III</option>
+                                                        <option>IV</option>
+                                                    </select>
+                                                    <div class="select__icon"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="grid">
+                                            <div class="grid__col grid__col--10of12--medium">
+                                                <label for="address" class="label">Street Address</label>
+                                                <input type="text" name="address" id="address" class="input" />
+                                            </div>
+                                            <div class="grid__col grid__col--2of12--medium">
+                                                <label for="unit" class="label">Unit #</label>
+                                                <input type="number" name="unit" id="unit" class="input" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="grid">
+                                            <div class="grid__col grid__col--8of12--medium">
+                                                <label for="city" class="label">City</label>
+                                                <input type="text" name="city" id="city" class="input" />
+                                            </div>
+                                            <div class="grid__col grid__col--6of12 grid__col--2of12--medium">
+                                                <label for="state" class="label">State</label>
+                                                <div class="select">
+                                                    <select class="select__menu" name="state" id="state">
+                                                        <option selected></option>
+                                                        <option>AL</option>
+                                                        <option>AK</option>
+                                                        <option>AZ</option>
+                                                        <option>AR</option>
+                                                        <option>...</option>
+                                                    </select>
+                                                    <div class="select__icon"></div>
+                                                </div>
+                                            </div>
+                                            <div class="grid__col grid__col--6of12 grid__col--2of12--medium">
+                                                <label for="zip" class="label">Zip Code</label>
+                                                <input type="text" name="zip" id="zip" class="input" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="grid">
+                                            <div class="grid__col grid__col--3of12--medium">
+                                                <label for="dob" class="label">Date of Birth</label>
+                                                <input type="text" name="dob" id="dob" placeholder="MM-DD-YYYY" class="input" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="label">Are you currently an Allstate customer?</div>
+                                            <ul class="hList">
+                                                <li>
+                                                    <label class="option" for="currentCustomer-yes">
+                                                        <input class="option__input" type="radio" value="" name="currentCustomer" id="currentCustomer-yes" />
+                                                        <span class="option__icon option__icon--radio"></span>
+                                                        <span class="option__text">Yes</span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="option" for="currentCustomer-no">
+                                                        <input class="option__input" type="radio" value="" name="currentCustomer" id="currentCustomer-no" checked />
+                                                        <span class="option__icon option__icon--radio"></span>
+                                                        <span class="option__text">No</span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                    </div>
+                                    <div>
+                                        <div class="label">Terms of Use</div>
+                                        <ul class="vList vList--toHList">
+                                            <li>
+                                                <label class="option" for="terms">
+                                                    <input class="option__input" type="checkbox" value="" name="terms" id="terms" />
+                                                    <span class="option__icon"></span>
+                                                    <span class="option__text">I have read and agree to the <a href="#">terms of use</a>.</span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <div class="subdivision__hd">
+                                            <span class="display display--bold">Next Step: </span>
+                                            <span>Submit</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <ul class="control__group">
+                                            <li>
+                                                <button type="submit" class="btn btn--orange">Next</button>
+                                            </li>
+                                            <li>
+                                                <button type="button" class="btn btn--dismiss">Cancel</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                        <!-- END FORM TEMPLATE -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.js"></script>
+	<script src="../../assets/scripts/datepicker_plugin.js"></script>
+</body>
+</html>

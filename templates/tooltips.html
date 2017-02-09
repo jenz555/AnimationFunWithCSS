@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<!--[if lte IE 8 ]> <html class="ie" lang="en"> <![endif]-->
+<!--[if IE 9 ]> <html class="ie ie9" lang="en"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+<title>Allstate User Interface Toolkit Starter Tooltips Template</title>
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="../assets/styles/app.css" />
+<script src="../assets/scripts/libs/aic-1.6.0.min.js"></script>
+<script src="../assets/scripts/global.js"></script>
+<script src="../assets/scripts/utilities.js"></script>
+<script src="../assets/scripts/tooltip.plugin.js"></script>
+<script type="text/javascript">
+    $(function () {
+      $('#tooltip-1').tooltip();
+      $('#tooltip-4').tooltip({ modifierClass: 'tooltip__content--bottomAligned' });
+      $('#tooltip-2').tooltip({ onclick: true });
+      $('#tooltip-3').tooltip();
+    });
+</script>
+</head>
+<body>
+    <div class="vr">
+        <div class="box">
+            <div class="txt txt--centered">
+                <h1 class="hero__h1">Allstate<sup>&copy;</sup> User Interface Toolkit Tooltips Template</h1>
+            </div>
+        </div>
+    </div>
+    <div class="vr">
+        <div class="wrapper">
+
+          <div class="vr--x2">
+              <div class="box box--framed">
+                  <div class="vr--x2">
+                      <h3 class="display display--20 display--bold">Dependencies:</h3>
+                  </div>
+                  <ul class="uList">
+                      <li>
+                          <a href="http://jquery.com/" target="_blank">
+                              <strong>Aic JS Framework</strong><br />
+                              <code>&lt;script src="../assets/scripts/libs/aic-1.6.0.min.js"&gt;&lt;/script&gt;</code>
+                          </a>
+                      </li>
+                      <li>
+                          <strong>global.js</strong><br />
+                          <code>&lt;script src="../assets/scripts/global.js"&gt;&lt;/script&gt;</code>
+                      </li>
+                      <li>
+                          <strong>utilities.js</strong><br />
+                          <code>&lt;script src="../assets/scripts/utilities.js"&gt;&lt;/script&gt;</code>
+                      </li>
+                      <li>
+                          <strong>tooltip.plugin.js</strong><br />
+                          <code>&lt;script src="../assets/scripts/tooltip.plugin.js"&gt;&lt;/script&gt;</code>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+
+            <div class="vr--x2">
+                <h3 class="display display--20 display--bold">Appendix:</h3>
+            </div>
+            <table class="table vr">
+                <thead>
+                    <tr>
+                        <th>Modifier Class</th>
+                        <th>Assign To</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>.tooltip</code></td>
+                        <td>*</td>
+                        <td>Wraps around tooltip content.</td>
+                    </tr>
+                    <tr>
+                        <td><code>.tooltip--toaster</code></td>
+                        <td>*</td>
+                        <td>Wraps around tooltip content. Applies toaster styles to tooltip.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table class="table vr">
+                <thead>
+                    <tr>
+                        <th>Option</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>modifierClass</td>
+                        <td>string</td>
+                        <td>null</td>
+                        <td>Adds a modifier class to the tooltip content container.</td>
+                    </tr>
+                    <tr>
+                        <td>delay</td>
+                        <td>number</td>
+                        <td>0</td>
+                        <td>Sets the delay for hiding the tooltip on mouseleave.</td>
+                    </tr>
+                    <tr>
+                        <td>onclick</td>
+                        <td>boolean</td>
+                        <td>false</td>
+                        <td>If set to true, the tooltip will be triggered on click instead of hover.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Callback</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>onShow</td>
+                        <td>Callback to be triggered when tooltip is shown.</td>
+                    </tr>
+                    <tr>
+                        <td>onHide</td>
+                        <td>Callback to be triggered when tooltip is hidden.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <hr />
+            <div class="vr--x2">
+                <h3 class="display display--20 display--bold">Template:</h3>
+            </div>
+            <!-- BEGIN TEMPLATE -->
+
+            <h4 class="display display--4 display--bold vr">On Hover</h4>
+            <p>
+                <span id="tooltip-1" class="tooltip" aria-describedby="tooltip__content-1">
+              		Standard Tooltip - Top aligned
+              		<span id="tooltip__content-1" class="tooltip__content tooltip__content--hidden" role="tooltip" aria-hidden="true">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non ex ornare, fringilla mi quis, suscipit erat.
+              		</span>
+              	</span>
+            </p>
+
+            <p>
+                <span id="tooltip-4" class="tooltip" aria-describedby="tooltip__content-1">
+              		Standard Tooltip - Bottom Aligned
+              		<span id="tooltip__content-1" class="tooltip__content tooltip__content--hidden" role="tooltip" aria-hidden="true">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non ex ornare, fringilla mi quis, suscipit erat.
+              		</span>
+              	</span>
+            </p>
+
+            <h4 class="display display--4 display--bold vr">On Click</h4>
+
+            <p>
+                <span id="tooltip-2" class="tooltip" aria-describedby="tooltip__content-2">
+            		Standard Tooltip - On Click
+            		<span id="tooltip__content-2" class="tooltip__content tooltip__content--hidden" role="tooltip" aria-hidden="true">
+                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non ex ornare, fringilla mi quis, suscipit erat.
+            		</span>
+            	</span>
+            </p>
+
+            <p>
+                <span id="tooltip-3" class="tooltip" aria-describedby="tooltip__content-3">
+            		Toaster-Style Tooltip
+            		<span id="tooltip__content-3" class="tooltip__content tooltip__content--hidden tooltip__content--toaster" role="tooltip" aria-hidden="true">
+                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non ex ornare, fringilla mi quis, suscipit erat.
+            		</span>
+            	</span>
+            </p>
+
+            <!-- END TEMPLATE -->
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<!--[if lte IE 8 ]> <html class="ie" lang="en"> <![endif]-->
+<!--[if IE 9 ]> <html class="ie ie9" lang="en"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+<title>Allstate User Interface Toolkit Starter Modals Template</title>
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="../assets/styles/app.css" />
+<script src="../assets/scripts/libs/aic-1.6.0.min.js"></script>
+<script src="../assets/scripts/global.js"></script>
+<script src="../assets/scripts/utilities.js"></script>
+<script src="../assets/scripts/flexdialog.plugin.js"></script>
+<script type="text/javascript">
+  $(function () {
+    // BEGIN MODAL TEMPLATE
+    $('#dialogTrigger-1').als_flexDialog({
+      "target": "nonModalDialog",
+       "overlay": true,
+       "overlayClass": 'clickableOverlay--transparent'
+    });
+    $('#dialogTrigger-2').als_flexDialog({
+      "target": "dialogModal"
+    });
+    $('#dialogTrigger-3').als_flexDialog({
+      "target": "dialogModalAjax",
+      "async": { "url": "_modal_content.html" }
+    });
+    // BEGIN MODAL TEMPLATE
+  });
+</script>
+</head>
+<body>
+    <div class="vr">
+        <div class="box">
+            <div class="txt txt--centered">
+                <h1 class="hero__h1">Allstate<sup>&copy;</sup> User Interface Toolkit Modals Template</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="vr--x2">
+        <div class="wrapper">
+
+            <div class="vr">
+                <div class="box box--framed">
+                    <div class="vr--x2">
+                        <h3 class="display display--20 display--bold">Dependencies:</h3>
+                    </div>
+                    <ul class="uList">
+                        <li>
+                            <a href="http://jquery.com/" target="_blank">
+                                <strong>Aic JS Framework</strong><br />
+                                <code>&lt;script src="../assets/scripts/libs/aic-1.6.0.min.js"&gt;&lt;/script&gt;</code>
+                            </a>
+                        </li>
+                        <li>
+                            <strong>globals.js</strong><br />
+                            <code>&lt;script src="../assets/scripts/globals.js"&gt;&lt;/script&gt;</code>
+                        </li>
+                        <li>
+                            <strong>flexdialog.plugin.js</strong><br />
+                            <code>&lt;script src="../assets/scripts/flexdialog.plugin.js"&gt;&lt;/script&gt;</code>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr />
+
+            <div class="vr--x2">
+                <h3 class="display display--20 display--bold">Appendix:</h3>
+            </div>
+            <table class="table table--appendix vr">
+                <thead>
+                    <tr>
+                        <th>Option</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>overlay</td>
+                        <td>boolean</td>
+                        <td>true</td>
+                        <td>If modal has class .dialogNonModal, this value automatically will be set to false.</td>
+                    </tr>
+                    <tr>
+                        <td>blockOverlayClick</td>
+                        <td>boolean</td>
+                        <td>false</td>
+                        <td>If set to true, click events attached to the overlay will be canceled.</td>
+                    </tr>
+                    <tr>
+                        <td>TertiaryBtn</td>
+                        <td>boolean</td>
+                        <td>true</td>
+                        <td>If set to false, the dialog will not have a Tertiary button.</td>
+                    </tr>
+                    <tr>
+                        <td>activeClass</td>
+                        <td>string</td>
+                        <td>dialogModal--active</td>
+                        <td>If modal has class .dialogNonModal, this value will automatically be set to dialogNonModal--active</td>
+                    </tr>
+                </tbody>
+              </table>
+
+              <table class="table table--appendix">
+                  <thead>
+                      <tr>
+                          <th>Callback</th>
+                          <th>Details</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td>onShow</td>
+                          <td>Triggers callback when modal is opened.</td>
+                      </tr>
+                      <tr>
+                          <td>onHide</td>
+                          <td>Triggers callback when modal is Tertiaryd.</td>
+                      </tr>
+                  </tbody>
+              </table>
+
+              <hr />
+
+              <div class="box box--framed">
+                  <div class="vr--x2">
+                      <h3 class="display display--20 display--bold">Dependencies:</h3>
+                  </div>
+                  <ul class="uList">
+                      <li>
+                          <a href="http://jquery.com/" target="_blank">
+                              <strong>Aic JS Framework</strong><br />
+                              <code>&lt;script src="../assets/scripts/libs/aic-1.6.0.min.js"&gt;&lt;/script&gt;</code>
+                          </a>
+                      </li>
+                      <li>
+                          <strong>global.js</strong><br />
+                          <code>&lt;script src="../assets/scripts/global.js"&gt;&lt;/script&gt;</code>
+                      </li>
+                      <li>
+                          <strong>utilities.js</strong><br />
+                          <code>&lt;script src="../assets/scripts/utilities.js"&gt;&lt;/script&gt;</code>
+                      </li>
+                      <li>
+                          <strong>flexdialog.plugin.js</strong><br />
+                          <code>&lt;script src="../assets/scripts/flexdialog.plugin.js"&gt;&lt;/script&gt;</code>
+                      </li>
+                  </ul>
+              </div>
+
+            <hr />
+
+            <div class="vr--x2">
+                <h3 class="display display--20 display--bold">Contextual Modal (slideout) Template:</h3>
+            </div>
+            <!-- BEGIN CONTEXTUAL MODAL TEMPLATE -->
+            <p>
+            	<a id="dialogTrigger-1" class="anchor" href="javascript:void(0);">Show Non Modal Dialog</a>
+            </p>
+
+            <div id="nonModalDialog" class="dialogNonModal" role="dialog" aria-labelledby="dialogTitle" aria-describedby="dialogDesc">
+            	<div class="dialog__wrap">
+
+                <div class="dialog__body" tabindex="0">
+        	        <div class="dialog__body__hd">
+        		        <h2 class="display display--2">CONTEXTUAL HELP</h4>
+        	        </div>
+        	        <div class="dialog__body__content">
+                    <p class="vr--x2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vulputate, sem non sagittis feugiat, sapien odio aliquet tortor, eget interdum orci purus vestibulum odio. Suspendisse placerat imperdiet gravida. Etiam faucibus lectus nec dolor iaculis egestas. Sed vel auctor est, ac ornare est. Proin lorem leo, varius vel semper ut, tempor nec urna. Nunc elementum eu purus ac luctus. Aliquam ornare tincidunt laoreet. </p>
+        	          <ng-include src="'app/_partials/_patterns/_tables-responsive.html'"></ng-include>
+                  </div>
+                </div>
+
+                <div class="dialog__footer">
+                  <div class="control">
+                      <ul class="control__group">
+                          <li>
+                              <a href="#" class="btn">Primary</a>
+                          </li>
+                          <li>
+                              <a href="#" class="btn btn--dismiss btn__hideDialog">Tertiary</a>
+                          </li>
+                      </ul>
+                  </div>
+                </div>
+
+            	</div>
+            </div>
+            <!-- END CONTEXTUAL MODAL TEMPLATE -->
+
+            <hr />
+
+            <div class="vr--x2">
+                <h3 class="display display--20 display--bold">Modal Template:</h3>
+            </div>
+            <!-- BEGIN MODAL TEMPLATE -->
+            <p>
+            	<a id="dialogTrigger-2" class="anchor" href="javascript:void(0);">Show Modal Dialog</a>
+            </p>
+
+
+            <div id="dialogModal" class="dialogModal" role="dialog" aria-labelledby="dialogTitle" aria-describedby="dialogDesc">
+            	<div class="dialog__wrap">
+
+                <div class="dialog__body" tabindex="0">
+        	        <div class="dialog__body__hd">
+        		        <h2 class="display display--2">MODAL WINDOW</h2>
+        	        </div>
+        	        <div class="dialog__body__content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vulputate, sem non sagittis feugiat, sapien odio aliquet tortor, eget interdum orci purus vestibulum odio. Suspendisse placerat imperdiet gravida. Etiam faucibus lectus nec dolor iaculis egestas. Sed vel auctor est, ac ornare est. Proin lorem leo, varius vel semper ut, tempor nec urna. Nunc elementum eu purus ac luctus. Aliquam ornare tincidunt laoreet. </p>
+        	        </div>
+                </div>
+
+                <div class="dialog__footer">
+                  <div class="control">
+                      <ul class="control__group">
+                          <li>
+                              <a href="#" class="btn">Primary</a>
+                          </li>
+                          <li>
+                              <a href="#" class="btn btn--dismiss btn__hideDialog">Tertiary</a>
+                          </li>
+                      </ul>
+                  </div>
+                </div>
+
+            	</div>
+            </div>
+            <!-- END MODAL TEMPLATE -->
+
+            <hr />
+
+            <div class="vr--x2">
+                <h3 class="display display--20 display--bold">Modal Dialog / Non-modal Dialog - AJAX Template:</h3>
+            </div>
+            <!-- BEGIN AJAX MODAL TEMPLATE -->
+            <p>
+            	<a id="dialogTrigger-3" class="anchor" href="javascript:void(0);">Show Modal Dialog</a>
+            </p>
+
+            <div id="dialogModalAjax" class="dialogModal" role="dialog" aria-labelledby="dialogTitle" aria-describedby="dialogDesc">
+            	<div class="dialog__wrap">
+
+                <div class="dialog__footer">
+                  <div class="control">
+                      <ul class="control__group">
+                          <li>
+                              <a href="#" class="btn">Primary</a>
+                          </li>
+                          <li>
+                              <a href="#" class="btn btn--dismiss btn__hideDialog">Tertiary</a>
+                          </li>
+                      </ul>
+                  </div>
+                </div>
+
+            	</div>
+            </div>
+            <!-- END AJAX MODAL TEMPLATE -->
+        </div>
+    </div>
+</body>
+</html>

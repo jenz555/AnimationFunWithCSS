@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!--[if lte IE 8 ]> <html class="ie" lang="en"> <![endif]-->
+<!--[if IE 9 ]> <html class="ie ie9" lang="en"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+<title>Allstate User Interface Toolkit Starter Radio Buttons Template</title>
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="../assets/styles/app.css" />
+</head>
+<body>
+    <div class="vr">
+        <div class="box">
+            <div class="txt txt--centered">
+                <h1 class="hero__h1">Allstate<sup>&copy;</sup> User Interface Toolkit Radio Buttons Template</h1>
+            </div>
+        </div>
+    </div>
+    <div class="vr">
+        <div class="wrapper">
+            <div class="vr--x2">
+                <h3 class="display display--20 display--bold">Appendix:</h3>
+            </div>
+            <table class="table table--appendix">
+                <thead>
+                    <tr>
+                        <th>&nbsp;</th>
+                        <th>Modifier Class</th>
+                        <th>Assign To</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td><code>.option</code></td>
+                        <td>*</td>
+                        <td>Manages formatting of radio button and associated label.</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td><code>.option__input</code></td>
+                        <td>&lt;input type="radio" / &gt;</td>
+                        <td>Hides default radio button.</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td><code>.option__text</code></td>
+                        <td>*</td>
+                        <td>Applies styling to element to have checkbox label text.</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td><code>.option__icon--radio</code></td>
+                        <td>.option__icon</td>
+                        <td>Applies styling to element to have radio button unchecked/checked state.</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td><code>.option--hasError</code></td>
+                        <td>.option</td>
+                        <td>Applies error styling to the radio button.</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td><code>.option--disabled</code></td>
+                        <td>.option</td>
+                        <td>Applies disabled styling to the radio button.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <hr />
+
+            <div class="vr--x2">
+                <h3 class="display display--20 display--bold">Basic Radio Button Template:</h3>
+            </div>
+            <!-- BEGIN BASIC RADIO BUTTON TEMPLATE -->
+            <label class="option" for="radio--1">
+                <input class="option__input" type="radio" value="" name="radio" id="radio--1" />
+                <span class="option__icon option__icon--radio"></span>
+                <span class="option__text">Yes</span>
+            </label>
+            <!-- END BASIC RADIO BUTTON TEMPLATE -->
+
+            <hr />
+
+            <div class="vr--x2">
+                <h3 class="display display--20 display--bold">Radio Button (invalid) Template:</h3>
+            </div>
+            <!-- BEGIN RADIO BUTTON INVALID TEMPLATE -->
+            <label class="option option--hasError" for="radio--2">
+                <input class="option__input" type="radio" value="" name="radio" id="radio--2" aria-required="true" />
+                <span class="option__icon option__icon--radio"></span>
+                <span class="option__text">No</span>
+            </label>
+            <!-- END RADIO BUTTON INVALID TEMPLATE -->
+
+            <hr />
+
+            <div class="vr--x2">
+                <h3 class="display display--20 display--bold">Radio Button (disabled) Template:</h3>
+            </div>
+            <!-- BEGIN RADIO BUTTON DISABLED TEMPLATE -->
+            <label class="option option--disabled" for="radio--3">
+                <input class="option__input" type="radio" disabled value="" name="radio-disabled" id="radio--3" aria-required="true" />
+                <span class="option__icon option__icon--radio"></span>
+                <span class="option__text">No</span>
+            </label>
+            <!-- END RADIO BUTTON DISABLED TEMPLATE -->
+
+            <hr />
+
+            <div class="vr--x2">
+                <h3 class="display display--20 display--bold">Radio Button (disabled selected) Template:</h3>
+            </div>
+            <!-- BEGIN RADIO BUTTON DISABLED SELECTED TEMPLATE -->
+            <label class="option option--disabled" for="radio--4">
+                <input class="option__input" type="radio" disabled checked value="" name="radio-disabled" id="radio--4" aria-required="true" />
+                <span class="option__icon option__icon--radio"></span>
+                <span class="option__text">No</span>
+            </label>
+            <!-- END RADIO BUTTON DISABLED SELECTED TEMPLATE -->
+        </div>
+    </div>
+</body>
+</html>

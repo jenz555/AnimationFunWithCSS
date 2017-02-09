@@ -1,0 +1,97 @@
+
+.CSS__hero--towTruck--2 {
+    width: 100%;
+    height: 160px;
+    position: absolute;
+    z-index: 300;
+    overflow: hidden;
+    background-image: url('../images/towTruck.png');
+    background-repeat: no-repeat;
+     @include animation('animatedTruckCSS2 2s linear 1');
+    @include stop();
+    z-index: $zIndex-9;
+    animation-fill-mode: forwards;
+}
+
+@include keyframes(animatedTruckCSS2) {
+ from { background-position: 130% 110%; }
+	to { background-position: 35% 110%;}
+}
+
+
+.CSS__mechanic--2 {
+    width: 33px;
+    position: absolute;
+    top: 98px;
+    z-index: 400;
+    height: 44px;
+    opacity: 0;
+    left: 56%;
+    background-image: url('../images/mechanic.png');
+   -webkit-animation:fadeIn 1s;
+    -webkit-animation-delay:2s;
+    -webkit-animation-fill-mode:forwards;
+    -moz-animation:fadeIn 1s;
+    -moz-animation-delay:2s;
+    -moz-animation-fill-mode:forwards;
+    animation:fadeIn 1s;
+    animation-delay:2s;
+    animation-fill-mode:forwards;
+
+}
+
+.CSS__hero--carFamily {
+    width: 100%;
+    height: 160px;
+    position: absolute;
+    overflow: hidden;
+    background-image: url('../images/carAndFamily.png');
+    background-repeat: no-repeat;
+    animation: animatedCarFamily2  2s linear 1;
+    -ms-animation: animatedCarFamily2  2s linear 1;
+    -moz-animation: animatedCarFamily2  2s linear 1;
+    -webkit-animation: animatedCarFamily2  2s linear 1;
+    z-index: $zIndex-8;
+    animation-fill-mode: forwards;
+    top: -13px;
+}
+
+@keyframes animatedCarFamily2  {
+	from { background-position: 10% 110%; }
+	to { background-position: 67% 110%;}
+}
+
+
+//tow truck - scene 1
+@media (max-width: $breakpoint-small) { 
+      .CSS__mechanic--2 {
+        left: 38%;
+  }
+}
+
+@media (max-width: $breakpoint-medium) { 
+      .CSS__mechanic--2 {
+        left: 52%;
+  }
+}
+
+@media (max-width: 675px) { 
+     .CSS__mechanic--2 {
+          left: 49%;
+  }
+}
+
+@media (max-width: 564px) { 
+     .CSS__mechanic--2 {
+        left: 45%;
+
+  }
+
+}
+
+@media (max-width: 490px) { 
+  .CSS__mechanic--2 {
+        left: 38%;
+  }
+}
+

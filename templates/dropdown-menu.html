@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<!--[if lte IE 8 ]> <html class="ie" lang="en"> <![endif]-->
+<!--[if IE 9 ]> <html class="ie ie9" lang="en"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+<title>Allstate User Interface Toolkit Starter Dropdown Menu Template</title>
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="../assets/styles/app.css" />
+</head>
+<body>
+    <div class="vr">
+        <div class="box">
+            <div class="txt txt--centered">
+                <h1 class="hero__h1">Allstate<sup>&copy;</sup> User Interface Toolkit Dropdown Menu Template</h1>
+            </div>
+        </div>
+    </div>
+    <div class="vr">
+        <div class="wrapper">
+            <div class="vr--x2">
+                <h3 class="display display--20 display--bold">Appendix:</h3>
+            </div>
+            <table class="table table--appendix">
+                <thead>
+                    <tr>
+                        <th>&nbsp;</th>
+                        <th>Modifier Class</th>
+                        <th>Assign To</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td><code>.select</code></td>
+                        <td>*</td>
+                        <td>Container for stylizing dropdown menus.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td><code>.select--isDisabled</code></td>
+                        <td>.select</td>
+                        <td>Applies disabled state to the dropdown menu (requires 'disabled' attribute on child &lt;select&gt;).</td>
+                    </tr>                    
+                    <tr>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td><code>.select--micro</code></td>
+                        <td>.select--micro</td>
+                        <td>Resizes a dropdown to 100px wide.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td><code>.select--sm</code></td>
+                        <td>.select--sm</td>
+                        <td>Resizes a dropdown to 30% wide.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td><code>.select--med</code></td>
+                        <td>.select--micro</td>
+                        <td>Resizes a dropdown to 48% wide.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="" scroll-to="select-sizes">
+                                <i class="fa fa-arrow-circle-down icon icon--flush"></i>
+                            </a>
+                        </td>
+                        <td><code>.select--hasError</code></td>
+                        <td>.select</td>
+                        <td>Applies error styling to the dropdown menu.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <hr />
+
+            <div class="vr--x2">
+                <h3 class="display display--20 display--bold">Dropdown Menu Template:</h3>
+            </div>
+            <!-- BEGIN DROPDOWN MENU TEMPLATE -->
+            <div class="select">
+                <select class="select__menu">
+                    <option selected>Select an option</option>
+                    <option>Option 1</option>
+                </select>
+                <div class="select__icon"></div>
+            </div>
+
+            <hr />            
+
+            <div class="vr--x2">
+                <h3 class="display display--20 display--bold">Dropdown Menu Sizes:</h3>
+            </div>
+            <!-- BEGIN DROPDOWN MENU SIZE TEMPLATE -->
+            <div class="select select--micro">
+                <select class="select__menu">
+                    <option selected>Micro - Select an option</option>
+                    <option>Option 1</option>
+                </select>
+                <div class="select__icon"></div>
+            </div>
+
+            <br /><br />
+
+            <div class="select select--sm">
+                <select class="select__menu">
+                    <option selected>Small - Select an option</option>
+                    <option>Option 1</option>
+                </select>
+                <div class="select__icon"></div>
+            </div>
+
+            <br /><br />
+
+            <div class="select select--med">
+                <select class="select__menu">
+                    <option selected>Medium - Select an option</option>
+                    <option>Option 1</option>
+                </select>
+                <div class="select__icon"></div>
+            </div>
+
+            <br /><br />
+
+            <div class="select">
+                <select class="select__menu">
+                    <option selected>Default - Select an option</option>
+                    <option>Option 1</option>
+                </select>
+                <div class="select__icon"></div>
+            </div>
+            <!-- END DROPDOWN MENU SIZE TEMPLATE -->
+
+            <hr />
+
+            <div class="vr--x2">
+                <h3 class="display display--20 display--bold">Dropdown Menu (invalid) Template:</h3>
+            </div>
+            <!-- BEGIN DROPDOWN MENU (INVALID) TEMPLATE -->
+            <div class="select select--hasError">
+                <select class="select__menu">
+                    <option selected>Select an option</option>
+                    <option>Option 1</option>
+                </select>
+                <div class="select__icon"></div>
+            </div>
+            <!-- END DROPDOWN MENU (INVALID) TEMPLATE -->
+            
+            <hr />
+
+            <div class="vr--x2">
+                <h3 class="display display--20 display--bold">Disabled Dropdown Menu Template:</h3>
+            </div>
+            <!-- BEGIN DISABLED DROPDOWN MENU TEMPLATE -->
+            <div class="select select--isDisabled">
+                <select class="select__menu" disabled>
+                    <option selected>Select an option</option>
+                    <option>Option 1</option>
+                </select>
+                <div class="select__icon"></div>
+            </div>
+            <!-- END DISABLED DROPDOWN MENU TEMPLATE -->            
+        </div>
+    </div>
+</body>
+
+</html>

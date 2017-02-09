@@ -1,0 +1,21 @@
+{
+  "name": "ghr",
+  "version": "1.0.0",
+  "description": "This is the Allstate UI Toolkit Boilerplate.",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.allstate.com/JHiar/GHR.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^2.0.0"
+  }
+}

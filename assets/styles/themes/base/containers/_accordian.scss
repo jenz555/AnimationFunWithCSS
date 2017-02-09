@@ -1,0 +1,114 @@
+// ------------------------
+//  INFORMATION
+// ------------------------
+// Important: Do not change these core files. Any changes should be
+//            added to a theme file. Example '/themes/_accordion.scss'
+//
+// Description: Accordions are used to show/hide content in a vertical pattern.
+//              Checkbox accordions can have all content opened at the same time,
+//              whereas radio accordions can only have opened at a time.
+//
+//
+// ------------------------
+//  EXAMPLES
+// ------------------------
+//
+//    <div class="accordion__toggle">
+//        <input  class="accordion__toggle__checkbox" type="checkbox" id="box1" name="box">
+//        <label class="accordion__toggle__header" for="box1">First Box</label>
+//        <div class="accordion__content"></div>
+//    </div>
+
+//    <div class="accordion__toggle">
+//        <input class="accordion__toggle__checkbox" type="radio" id="box2" name="box">
+//        <label class="accordion__toggle__header" for="box2">Second Box</label>
+//        <div class="accordion__content"></div>
+//    </div>
+//
+// http://ux.allstate.com/ux/Allstate-Style-Guide/#/components/accordions
+//
+//
+// ------------------------
+//  APPENDIX
+// ------------------------
+//
+//
+//
+.accordion__content {
+  position: relative;
+  height: 0;
+  margin: 0;
+  max-height: 0rem;
+  overflow: hidden;
+  display: block;
+
+  &:target {
+    height: auto;
+    max-height: 100rem;
+
+  }
+}
+
+.accordion__toggle--hover {
+  &:hover {
+    .accordion__content {
+      height: auto;
+      max-height: 100rem;
+    }
+  }
+}
+
+.accordion__toggle__checkbox {
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
+
+  &:checked ~ .accordion__content {
+    height: auto;
+    max-height: 1000rem;
+  }
+
+  &:checked ~ .accordion__toggle__header {
+    .accordion__toggle--icon {
+      @include transform(rotate(-90deg));
+    }
+  }
+}
+
+.accordion__toggle__header {
+  background-color: $gray-3;
+  padding: 10px 12px;
+  color: $gray-5;
+  display: block;
+  border-bottom: 1px solid $white;
+  &:hover,
+  &:active,
+  &:focus {
+    cursor: pointer;
+    background-color: $gray-2;
+  }
+}
+
+.accordion__toggle {
+  display: block;
+}
+
+.accordion__toggle--icon {
+  width:    0px;
+  height:   0px;
+  display:  inline-block;
+  position: relative;
+  top:      3px;
+  border-style: solid;
+  border-width: 7px 0 7px 8px;
+  border-color: transparent transparent transparent $white;
+  float: right;
+}
+
+.icon--circle.icon--tertiary {
+  border-color: $black;
+}

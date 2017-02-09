@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 2000 160" style="enable-background:new 0 0 2000 160;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#MW-Card-Header_1_);}
+</style>
+<linearGradient id="MW-Card-Header_1_" gradientUnits="userSpaceOnUse" x1="1585.432" y1="132.3439" x2="1585.432" y2="133.678" gradientTransform="matrix(375 0 0 -90 -593537 12036)">
+	<stop  offset="0" style="stop-color:#00C7ED"/>
+	<stop  offset="1" style="stop-color:#0078AB"/>
+</linearGradient>
+<path id="MW-Card-Header" class="st0" d="M0,0h2000v160.5H0V0z"/>
+</svg>

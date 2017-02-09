@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<!--[if lte IE 8 ]> <html class="ie" lang="en"> <![endif]-->
+<!--[if IE 9 ]> <html class="ie ie9" lang="en"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+<title>Allstate User Interface Toolkit Starter Tab Template</title>
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="../assets/styles/app.css" />
+<script src="../assets/scripts/libs/aic-1.6.0.min.js"></script>
+<script src="../assets/scripts/global.js"></script>
+<script src="../assets/scripts/toggle-core.plugin.js"></script>
+<script src="../assets/scripts/tab.plugin.js"></script>
+
+<script type="text/javascript">
+    $(function () {
+
+        $('[data-tab]').als_tab({});
+
+       /*
+        $('#tb').on("clicked", function(e, data) {
+             console.log( "I clicked on tab with target " + data.currentTarget );
+        });
+
+        $('#tb').on("open", function(e, data) {
+             console.log( "I opened tab " + data.currentTarget + ", Previous tab was " + data.previousTarget );
+        });
+
+        $('#tb').on("open_elm2", function(e, data) {
+             console.log( "This is a tab-specific event triggered when the second tab is opened" );
+        });
+
+        $('#tb').on("close_elm1", function(e, data) {
+             console.log( "This is a tab-specific event triggered when the first tab is closed" );
+        });
+
+        $('#tb').on("close", function(e, data) {
+             console.log( "I closed tab " + data.previousTarget );
+        });
+        */
+    });
+
+</script>
+
+<style>
+    code, td, th{
+      word-wrap: break-word;
+    }
+
+    .table thead tr{
+        white-space: normal;
+    }
+
+    table{
+      max-width: 100%;
+      table-layout: fixed;
+    }
+
+</style>
+
+</head>
+<body>
+    <div class="vr">
+        <div class="box">
+            <div class="txt txt--centered">
+                <h1 class="hero__h1">Allstate<sup>&copy;</sup> User Interface Toolkit Tab Template</h1>
+            </div>
+        </div>
+    </div>
+    <div class="vr">
+        <div class="wrapper">
+
+          <div class="vr--x2">
+              <div class="box box--framed">
+                  <h3 class="display display--20 display--bold">Notes:</h3>
+                  <p>
+                  Tab is a common container designed to display as a tab control across all screen sizes.
+                  </p>
+                  <p>
+                  All display toggle containers (tabs, accordions, tabcordions) are built on the toggle-core.plugin script which manages display state and emits events. Toggle containers work on the concept of triggers (denoted by data-trigger) and targets (denoted by data-target).
+                  </p>
+                  <p>
+                  The tab script layers on top of toggle-core to add keyboard navigation and tab-specific accessibility. (Arrow keys navigate between individual tabs).
+                  </p>
+              </div>
+          </div>
+
+          <div class="vr--x2">
+              <div class="box box--framed">
+                  <div class="vr--x2">
+                      <h3 class="display display--20 display--bold">Dependencies:</h3>
+                  </div>
+                  <ul class="uList">
+                      <li>
+                          <a href="http://jquery.com/" target="_blank">
+                              <strong>Aic JS Framework</strong><br />
+                              <code>&lt;script src="../assets/scripts/libs/aic-1.6.0.min.js"&gt;&lt;/script&gt;</code>
+                          </a>
+                      </li>
+                      <li>
+                          <strong>global.js</strong><br />
+                          <code>&lt;script src="../assets/scripts/global.js"&gt;&lt;/script&gt;</code>
+                      </li>
+                      <li>
+                          <strong>toggle-core.plugin.js</strong><br />
+                          <code>&lt;script src="../assets/scripts/toggle-core.plugin.js"&gt;&lt;/script&gt;</code>
+                      </li>
+                      <li>
+                          <strong>tab.plugin.js</strong><br />
+                          <code>&lt;script src="../assets/scripts/tab.plugin.js"&gt;&lt;/script&gt;</code>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+
+            <div class="vr--x2">
+                <h3 class="display display--20 display--bold">css:</h3>
+            </div>
+
+            <table class="table table--appendix vr">
+                <thead>
+                    <tr>
+                        <th>Modifier Class</th>
+                        <th>Assign To</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-th="Modifier Class"><code>.tabs</code></td>
+                        <td data-th="Assign To">*</td>
+                        <td data-th="Details">Wraps around tab content and manages its layout.</td>
+                    </tr>
+                    <tr>
+                        <td data-th="Modifier Class"><code>.tabs--colAlign</code></td>
+                        <td data-th="Assign To">.tabs</td>
+                        <td data-th="Details">Displays the tab content in column format.</td>
+                    </tr>
+                    <tr>
+                        <td data-th="Modifier Class"><code>.tabs--colAlign--reverse</code></td>
+                        <td data-th="Assign To">.tabs</td>
+                        <td data-th="Details">Use to reverse the display order of column formatted tabs</td>
+                    </tr>
+                    <tr>
+                        <td data-th="Modifier Class"><code>.tabs--rowAlign</code></td>
+                        <td data-th="Assign To">.tabs</td>
+                        <td data-th="Details">Displays the tab content in row format.</td>
+                    </tr>
+                    <tr>
+                        <td data-th="Modifier Class"><code>.tabs--rowAlign--reverse</code></td>
+                        <td data-th="Assign To">.tabs</td>
+                        <td data-th="Details">Use to reverse the display order of row formatted tabs</td>
+                    </tr>
+                    <tr>
+                        <td data-th="Modifier Class"><code>.tabs--justified</code></td>
+                        <td data-th="Assign To">.tabs</td>
+                        <td data-th="Details">Ensures that tab items fill 100% width and each occupies the same individual width. Use in conjunction with tabs--rowAlign only.</td>
+                    </tr>
+                    <tr>
+                        <td data-th="Modifier Class"><code>tabs__hd</code></td>
+                        <td data-th="Assign To">*</td>
+                        <td data-th="Details">Wrapper for tab items.</td>
+                    </tr>
+                    <tr>
+                        <td data-th="Modifier Class"><code>.tabs__hd__tab</code></td>
+                        <td data-th="Assign To">*</td>
+                        <td data-th="Details">Defines an individual tab item.</td>
+                    </tr>
+                    <tr>
+                        <td data-th="Modifier Class"><code>.tabs__bd</code></td>
+                        <td data-th="Assign To">*</td>
+                        <td data-th="Details">wrapper for tab content panels.</td>
+                    </tr>
+                    <tr>
+                        <td data-th="Modifier Class"><code>.tabs__bd__content</code></td>
+                        <td data-th="Assign To">*</td>
+                        <td data-th="Details">Wrapper container for tab content.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="vr--x2">
+                <h3 class="display display--20 display--bold">Custom events:</h3>
+            </div>
+
+            <table class="table table--appendix vr">
+                <thead>
+                    <tr>
+                        <th>Event</th>
+                        <th>Triggered when</th>
+                        <th>Trigger data</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-th="Event"><code>clicked</code></td>
+                        <td data-th="Triggered when">triggered on click of any tab</td>
+                        <td data-th="Trigger data"><code>data.currentTarget</code><br><code>data.previousTarget</code></td>
+                    </tr>
+                    <tr>
+                        <td data-th="Event"><code>clicked_{<i>trigger name</i>}</code></td>
+                        <td data-th="Triggered when">triggered on click of a tab with a particular <i>data-trigger</i></td>
+                        <td data-th="Trigger data"><code>data.currentTarget</code><br><code>data.previousTarget</code></td>
+                    </tr>
+                    <tr>
+                        <td data-th="Event"><code>open</code></td>
+                        <td data-th="Triggered when">triggered when a tab is opened (from being previously closed)</td>
+                        <td data-th="Trigger data"><code>data.currentTarget</code><br><code>data.previousTarget</code></td>
+                    </tr>
+                    <tr>
+                        <td data-th="Event"><code>open_{<i>trigger name</i>}</code></td>
+                        <td data-th="Triggered when">triggered on opening of a tab with a particular <i>data-trigger</i></td>
+                        <td data-th="Trigger data"><code>data.currentTarget</code><br><code>data.previousTarget</code></td>
+                    </tr>
+                    <tr>
+                        <td data-th="Event"><code>close</code></td>
+                        <td data-th="Triggered when">triggered when a tab is closed (from being previously opened)</td>
+                        <td data-th="Trigger data"><code>data.currentTarget</code><br><code>data.previousTarget</code></td>
+                    </tr>
+                    <tr>
+                        <td data-th="Event"><code>close_{<i>trigger name</i>}</code></td>
+                        <td data-th="Triggered when">triggered on closing of a tab with a particular <i>data-trigger</i></td>
+                        <td data-th="Trigger data"><code>data.currentTarget</code><br><code>data.previousTarget</code></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <hr />
+
+            <!-- BEGIN TAB TEMPLATE -->
+            <div id="tb2" data-tab class="tabs">
+
+                <!-- TABS -->
+                <div class="tabs__hd">
+
+                    <div id="tab1" class="tabs__hd__tab" data-trigger="elm1">
+                        Economy<br>
+                        $93/mo
+                    </div>
+
+                    <div id="tab2" class="tabs__hd__tab" data-trigger="elm2">
+                        Standard<br>
+                        $194/mo
+                    </div>
+
+                    <div id="tab3" class="tabs__hd__tab" data-trigger="elm3">
+                        Enhanced<br>
+                        $268/mo
+                    </div>
+
+                    <div id="tab3" class="tabs__hd__tab" data-trigger="elm4">
+                        Compare
+                    </div>
+
+                </div>
+
+                <!-- CONTENT -->
+                <div class="tabs__bd">
+                    <div class="tabs__bd__content" data-target="elm1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                    <div class="tabs__bd__content" data-target="elm2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</div>
+                    <div class="tabs__bd__content" data-target="elm3">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</div>
+                    <div class="tabs__bd__content" data-target="elm4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                </div>
+
+            </div>
+            <!-- END TAB TEMPLATE -->
+
+        </div>
+    </div>
+</body>
+</html>

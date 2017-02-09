@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<!--[if lte IE 8 ]> <html class="ie" lang="en"> <![endif]-->
+<!--[if IE 9 ]> <html class="ie ie9" lang="en"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+<title>Allstate User Interface Toolkit Starter Affix Template</title>
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="../assets/styles/app.css" />
+</head>
+<body>
+    <div class="vr">
+        <div class="box">
+            <div class="txt txt--centered">
+                <h1 class="hero__h1">Allstate<sup>&copy;</sup> User Interface Toolkit Affix Template</h1>                               
+            </div>        
+        </div>
+    </div>
+    <div class="vr">
+        <div class="wrapper">
+            <div class="vr--x2">
+                <h3 class="display display--20 display--bold">Appendix:</h3>
+            </div>                    
+            <table class="table table--appendix">
+                <thead>
+                    <tr>
+                        <th>&nbsp;</th>
+                        <th>Modifier Class</th>
+                        <th>Assign To</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="" scroll-to="affix-prefix-outside">
+                                <i class="fa fa-arrow-circle-down icon icon--flush"></i>
+                            </a>
+                        </td>
+                        <td><code>.affix</code></td>
+                        <td>*</td>
+                        <td>Positions a prefix outside and at the beginning of a text field.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="" scroll-to="affix-prefix-inside">
+                                <i class="fa fa-arrow-circle-down icon icon--flush"></i>
+                            </a>
+                        </td>
+                        <td><code>.affix--inside</code></td>
+                        <td>.affix</td>
+                        <td>Positions a prefix inside and at the beginning of a text field.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="" scroll-to="affix-postfix">
+                                <i class="fa fa-arrow-circle-down icon icon--flush"></i>
+                            </a>
+                        </td>
+                        <td><code>.affix--post</code></td>
+                        <td>.affix</td>
+                        <td>Positions a prefix outside and at the end of a text field.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="" scroll-to="affix-postfix-inside">
+                                <i class="fa fa-arrow-circle-down icon icon--flush"></i>
+                            </a>
+                        </td>
+                        <td><code>.affix--inside--post</code></td>
+                        <td>.affix</td>
+                        <td>Positions a prefix inside and at the end of a text field.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#">
+                                <i class="fa fa-arrow-circle-down icon icon--flush"></i>
+                            </a>
+                        </td>
+                        <td><code>.affix__icon</code></td>
+                        <td></td>
+                        <td>Wraps around the icon being used in correlation with the field.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#">
+                                <i class="fa fa-arrow-circle-down icon icon--flush"></i>
+                            </a>
+                        </td>
+                        <td><code>.affix__input</code></td>
+                        <td></td>
+                        <td>Wraps around the input field being used in correlation with the icon.</td>
+                    </tr>                    
+                    <tr>
+                        <td>
+                            <a href="#">
+                                <i class="fa fa-arrow-circle-down icon icon--flush"></i>
+                            </a>
+                        </td>
+                        <td><code>.affix__icon--top</code></td>
+                        <td>.affix__icon</td>
+                        <td>Vertically align a prefix to the top of the input field.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#">
+                                <i class="fa fa-arrow-circle-down icon icon--flush"></i>
+                            </a>
+                        </td>
+                        <td><code>.affix__icon--bottom</code></td>
+                        <td>.affix__icon</td>
+                        <td>Vertically align a prefix to the bottom of the input field.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#">
+                                <i class="fa fa-arrow-circle-down icon icon--flush"></i>
+                            </a>
+                        </td>
+                        <td><code>.affix--hasError</code></td>
+                        <td>.affix</td>
+                        <td>Apply error stat styling to the affix component.</td>
+                    </tr>                    
+                </tbody>
+            </table> 
+
+            <hr />
+
+            <div class="vr--x2">
+                <h3 class="display display--20 display--bold">Prefix - Outside (Default) Template:</h3>
+            </div>
+            <!-- BEGIN AFFIX DEFAULT TEMPLATE -->
+            <div class="affix">
+                <div class="affix__icon">$</div>
+                <div class="affix__input">
+                    <input class="input input--number" type="number" placeholder="Default State" />
+                </div>
+            </div>
+            
+            <br /><br />
+            <div class="affix affix--hasError">
+                <div class="affix__icon">$</div>
+                <div class="affix__input">
+                    <input class="input input--number" type="number" placeholder="Error State" />
+                </div>
+            </div>  
+            
+            <br /><br />
+            <div class="affix">
+                <div class="affix__icon">$</div>
+                <div class="affix__input">
+                    <input class="input input--number" type="number" placeholder="Disabled State" disabled />
+                </div>
+            </div>            
+            <!-- END AFFIX DEFAULT TEMPLATE -->
+
+            <hr />
+
+            <div class="vr--x2">
+                <h3 class="display display--20 display--bold">Prefix - Inside Template:</h3>
+            </div>
+            <!-- BEGIN AFFIX PREFIX INSIDE TEMPLATE -->
+            <div class="affix affix--inside">
+                <div class="affix__icon">$</div>
+                <div class="affix__input">
+                    <input class="input input--number" type="number" placeholder="Default State" />
+                </div>    
+            </div>
+            
+            <br /><br />
+            <div class="affix affix--inside affix--hasError">
+                <div class="affix__icon">$</div>
+                <div class="affix__input">
+                    <input class="input input--number" type="number" placeholder="Error State" />
+                </div>    
+            </div> 
+            
+            <br /><br />
+            <div class="affix affix--inside">
+                <div class="affix__icon">$</div>
+                <div class="affix__input">
+                    <input class="input input--number" type="number" placeholder="Disabled State" disabled />
+                </div>    
+            </div>             
+            <!-- END AFFIX PREFIX INSIDE TEMPLATE -->       
+
+            <hr />
+
+            <div class="vr--x2">
+                <h3 class="display display--20 display--bold">Postfix Template:</h3>
+            </div>
+            <!-- BEGIN AFFIX POSTFIX TEMPLATE -->
+            <div class="affix affix--post">
+                <div class="affix__input">
+                    <input class="input input--number" type="number" placeholder="Default State" />
+                </div>      
+                <div class="affix__icon">%</div>  
+            </div>
+            
+            <br /><br />
+            <div class="affix affix--post affix--hasError">
+                <div class="affix__input">
+                    <input class="input input--number" type="number" placeholder="Error State" />
+                </div>      
+                <div class="affix__icon">%</div>  
+            </div>  
+            
+            <br /><br />
+            <div class="affix affix--post">
+                <div class="affix__input">
+                    <input class="input input--number" type="number" placeholder="Disabled State" disabled />
+                </div>      
+                <div class="affix__icon">%</div>  
+            </div>             
+            <!-- END AFFIX POSTFIX TEMPLATE -->     
+
+            <hr />
+
+            <div class="vr--x2">
+                <h3 class="display display--20 display--bold">Postfix - Inside Template:</h3>
+            </div>
+            <!-- BEGIN AFFIX POSTFIX INSIDE TEMPLATE -->
+            <div class="affix affix--inside--post">
+                <div class="affix__input">
+                    <input class="input input--number" type="number" placeholder="Default State" />
+                </div>     
+                <div class="affix__icon">%</div>   
+            </div>
+            
+            <br /><br />
+            <div class="affix affix--inside--post affix--hasError">
+                <div class="affix__input">
+                    <input class="input input--number" type="number" placeholder="Error State" />
+                </div>     
+                <div class="affix__icon">%</div>   
+            </div>   
+            
+            <br /><br />
+            <div class="affix affix--inside--post">
+                <div class="affix__input">
+                    <input class="input input--number" type="number" placeholder="Disabled State" disabled />
+                </div>     
+                <div class="affix__icon">%</div>   
+            </div>               
+            <!-- END AFFIX POSTFIX INSIDE TEMPLATE -->                    
+        </div>	
+    </div>
+</body>
+</html>

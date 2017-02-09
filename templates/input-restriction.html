@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<!--[if lte IE 8 ]> <html class="ie" lang="en"> <![endif]-->
+<!--[if IE 9 ]> <html class="ie ie9" lang="en"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+<title>Allstate User Interface Toolkit Starter Tooltips Template</title>
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="../assets/styles/app.css" />
+<script src="../assets/scripts/libs/aic-1.6.0.min.js"></script>
+<script src="../assets/scripts/global.js"></script>
+<script src="../assets/scripts/inputRestriction.plugin.js"></script>
+<script type="text/javascript">
+  $(function () {
+    // BEGIN TEMPLATE
+    $('[data-input-allow]').restrictUserInputValue();
+    // END TEMPLATE
+  });
+</script>
+</head>
+<body>
+    <div class="vr">
+        <div class="box">
+            <div class="txt txt--centered">
+                <h1 class="hero__h1">Allstate<sup>&copy;</sup> User Interface Toolkit Input Restriction Template</h1>
+            </div>
+        </div>
+    </div>
+    <div class="vr">
+        <div class="wrapper">
+
+          <div class="vr--x2">
+              <div class="box box--framed">
+                  <div class="vr--x2">
+                      <h3 class="display display--20 display--bold">Dependencies:</h3>
+                  </div>
+                  <ul class="uList">
+                      <li>
+                          <a href="http://jquery.com/" target="_blank">
+                              <strong>Aic JS Framework</strong><br />
+                              <code>&lt;script src="../assets/scripts/libs/aic-1.6.0.min.js"&gt;&lt;/script&gt;</code>
+                          </a>
+                      </li>
+                      <li>
+                          <strong>global.js</strong><br />
+                          <code>&lt;script src="../assets/scripts/global.js"&gt;&lt;/script&gt;</code>
+                      </li>
+                      <li>
+                          <strong>inputRestriction.plugin.js</strong><br />
+                          <code>&lt;script src="../assets/scripts/inputRestriction.plugin.js"&gt;&lt;/script&gt;</code>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+
+            <div class="vr--x2">
+                <h3 class="display display--20 display--bold">Appendix:</h3>
+            </div>
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>attribute</th>
+                        <th>value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>data-input-allow</td>
+                        <td>Regular Expression</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <hr />
+            <div class="vr--x2">
+                <h3 class="display display--20 display--bold">Plugin Invocation:</h3>
+            </div>
+
+            <div class="vr--x2">
+              <code>$('[data-input-allow]').restrictUserInputValue();</code>
+            </div>
+
+            <div class="vr--x2">
+                <h3 class="display display--20 display--bold">Usage Examples:</h3>
+            </div>
+
+            <!-- BEGIN TEMPLATE -->
+            <div class="vr">
+              <label class="label">Allow Numbers Only</label>
+              <div class="vr">
+                <code>&lt;input type="text" data-input-allow="[0-9]" /&gt;</code>
+              </div>
+              <input class="input input--med"
+                     data-input-allow="[0-9]"
+                     type="text"
+                     name="name1">
+            </div>
+            <!-- END TEMPLATE -->
+
+            <!-- BEGIN TEMPLATE -->
+            <div class="vr">
+              <label class="label">Allow Letters Only</label>
+              <div class="vr">
+                <code>&lt;input type="text" data-input-allow="[a-zA-Z]" /&gt;</code>
+              </div>
+              <input class="input input--med"
+                     data-input-allow="[a-zA-Z]"
+                     type="text"
+                     name="name2">
+            </div>
+            <!-- END TEMPLATE -->
+
+            <!-- BEGIN TEMPLATE -->
+            <div class="vr">
+              <label class="label">Allow Letters and Numbers Only</label>
+              <div class="vr">
+                <code>&lt;input type="text" data-input-allow="[a-zA-Z0-9]" /&gt;</code>
+              </div>
+              <input class="input input--med"
+                     data-input-allow="[a-zA-Z0-9]"
+                     type="text"
+                     name="name2">
+            </div>
+            <!-- END TEMPLATE -->
+
+            <!-- BEGIN TEMPLATE -->
+            <div class="vr">
+              <label class="label">Allow Numbers and Dashes Only</label>
+              <div class="vr">
+                <code>&lt;input type="text" data-input-allow="[0-9\-]" /&gt;</code>
+              </div>
+              <input class="input input--med"
+                     data-input-allow="[0-9\-]"
+                     type="text"
+                     name="name2">
+            </div>
+            <!-- END TEMPLATE -->
+
+            <br>
+
+        </div>
+    </div>
+</body>
+</html>

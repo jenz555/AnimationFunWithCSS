@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<!--[if lte IE 8 ]> <html class="ie" lang="en"> <![endif]-->
+<!--[if IE 9 ]> <html class="ie ie9" lang="en"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+<title>Allstate User Interface Toolkit Starter Messages Template</title>
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="../assets/styles/app.css" />
+<script src="../assets/scripts/libs/aic-1.6.0.min.js"></script>
+<script src="../assets/scripts/global.js"></script>
+<script src="../assets/scripts/closeWarningMessage.plugin.js"></script>
+<script type="text/javascript">
+    $(function () {
+      $('.message--hasWarning-closeable').closeWarningMessage();
+    });
+</script>
+</head>
+<body>
+    <div class="vr">
+        <div class="box">
+            <div class="txt txt--centered">
+                <h1 class="hero__h1">Allstate<sup>&copy;</sup> User Interface Toolkit Messages Template</h1>
+            </div>
+        </div>
+    </div>
+    <div class="vr">
+        <div class="wrapper">
+            <div class="vr--x2">
+                <h3 class="display display--20 display--bold">Appendix:</h3>
+            </div>
+            <table class="table table--appendix">
+                <thead>
+                    <tr>
+                        <th>&nbsp;</th>
+                        <th>Modifier Class</th>
+                        <th>Assign To</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="" scroll-to="message">
+                                <i class="fa fa-arrow-circle-down icon icon--flush"></i>
+                            </a>
+                        </td>
+                        <td><code>.message</code></td>
+                        <td>*</td>
+                        <td>Manages the format of the message's content and theme. By default, this includes an information icon and grey background.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="" scroll-to="message-error">
+                                <i class="fa fa-arrow-circle-down icon icon--flush"></i>
+                            </a>
+                        </td>
+                        <td><code>.message--hasAlert</code></td>
+                        <td>.message</td>
+                        <td>Applies "error" styling.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="" scroll-to="message-confirm">
+                                <i class="fa fa-arrow-circle-down icon icon--flush"></i>
+                            </a>
+                        </td>
+                        <td><code>.message--hasConfirm</code></td>
+                        <td>.message</td>
+                        <td>Applies "confirmation" styling.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="" scroll-to="message-warning">
+                                <i class="fa fa-arrow-circle-down icon icon--flush"></i>
+                            </a>
+                        </td>
+                        <td><code>.message--hasWarning</code></td>
+                        <td>.message</td>
+                        <td>Applies "warning" styling.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <hr />
+
+            <div class="vr--x2">
+                <h3 class="display display--20 display--bold">Default Message Template:</h3>
+            </div>
+            <!-- BEGIN DEFAULT MESSAGE TEMPLATE -->
+            <div class="message">
+                <div class="message__icon">
+                    <i class="icon icon--info"></i>
+                </div>
+                <div class="message__bd">
+                    <p>Informational stuff. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis orci nec libero efficitur mollis. Ut et efficitur ex. In tempus iaculis eros quis iaculis. Quisque at metus quam. Nunc blandit elementum elit vel lobortis. Vestibulum sed ligula euismod, placerat odio vel, condimentum dui. Suspendisse dignissim massa ac sapien scelerisque faucibus. Proin felis neque, ultrices quis justo vel, aliquet interdum ex. </p>
+                </div>
+            </div>
+            <!-- END DEFAULT MESSAGE TEMPLATE -->
+
+            <hr />
+
+            <div class="vr--x2">
+                <h3 class="display display--20 display--bold">Error Message Template:</h3>
+            </div>
+            <!-- BEGIN ERROR MESSAGE TEMPLATE -->
+            <div class="message message--hasAlert">
+                <div class="message__icon">
+                    <i class="icon icon--error"></i>
+                </div>
+                <div class="message__bd">
+                    <div class="message__hd">
+                        <span class="display display--bold">Sorry, but 3 errors have been made</span>
+                    </div>
+                    <ul>
+                        <li>Error detail line 1</li>
+                        <li>Error detail line 2</li>
+                        <li>Error detail line 3</li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="#" class="txt--underline">Error Link 1</a>
+                        </li>
+                        <li>
+                            <a href="#" class="txt--underline">Error Link 2</a>
+                        </li>
+                        <li>
+                            <a href="#" class="txt--underline">Error Link 3</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- END ERROR MESSAGE TEMPLATE -->
+
+            <hr />
+
+            <div class="vr--x2">
+                <h3 class="display display--20 display--bold">Confirmation Message Template:</h3>
+            </div>
+            <!-- BEGIN CONFIRMATION MESSAGE TEMPLATE -->
+            <div class="message message--hasConfirm">
+                <div class="message__icon">
+                    <i class="icon icon--assertive"></i>
+                </div>
+                <div class="message__bd">
+                    <span class="display--thick">Confirmation number #123456789</span>
+                </div>
+            </div>
+            <!-- END CONFIRMATION MESSAGE TEMPLATE -->
+
+            <hr />
+
+            <div class="vr--x2">
+                <h3 class="display display--20 display--bold">Warning Message Template:</h3>
+            </div>
+            <!-- BEGIN WARNING MESSAGE TEMPLATE -->
+            <div class="message message--hasWarning">
+                <div class="message__icon">
+                    <i class="icon icon--warning"></i>
+                </div>
+                <div class="message__bd">
+                    <div class="message__hd">
+                        <span class="display display--bold">Your Action is Needed</span>
+                        <p>These actions should be completed to prevent delay of the claim process.</p>
+                    </div>
+                    <ul class="uList">
+                        <li>
+                            <a href="#">Update your communication preferences</a>
+                        </li>
+                        <li>
+                            <a href="#">Update your payment preferences</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- END WARNING MESSAGE TEMPLATE -->
+
+            <hr />
+
+            <div class="vr--x2">
+                <h3 class="display display--20 display--bold">Warning Message with Close Button Template:</h3>
+            </div>
+
+            <!-- BEGIN WARNING MESSAGE WITH CLOSE BUTTON TEMPLATE -->
+            <div id="warningMessage" class="message message--hasWarning message--hasWarning-closeable">
+                <div class="message__icon-close">+</div>
+                <div class="message__icon">
+                    <i class="icon icon--warning"></i>
+                </div>
+                <div class="message__bd">
+                    <div class="message__hd">
+                        <span class="display display--bold">Warning title</span>
+                        <p>These actions should be completed to prevent delay of the claim process.</p>
+                    </div>
+                    <ul class="uList">
+                        <li>
+                            <a href="#">Update your communication preferences</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- END WARNING MESSAGE WITH CLOSE BUTTON TEMPLATE -->
+
+            <div class="vr--x5">
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

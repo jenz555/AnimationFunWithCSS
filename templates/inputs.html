@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<!--[if lte IE 8 ]> <html class="ie" lang="en"> <![endif]-->
+<!--[if IE 9 ]> <html class="ie ie9" lang="en"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+<title>Allstate User Interface Toolkit Starter Inputs Template</title>
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="../assets/styles/app.css" />
+</head>
+<body>
+    <div class="vr">
+        <div class="box">
+            <div class="txt txt--centered">
+                <h1 class="hero__h1">Allstate<sup>&copy;</sup> User Interface Toolkit Inputs Template</h1>                               
+            </div>        
+        </div>
+    </div>
+    <div class="vr">
+        <div class="wrapper">
+            <div class="vr--x2">
+                <h3 class="display display--20 display--bold">Appendix:</h3>
+            </div>                    
+            <table class="table table--appendix">
+                <thead>
+                    <tr>
+                        <th>&nbsp;</th>
+                        <th>Modifier Class</th>
+                        <th>Assign To</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="" scroll-to="input">
+                                <i class="fa fa-arrow-circle-down icon icon--flush"></i>
+                            </a>
+                        </td>
+                        <td><code>.input</code></td>
+                        <td>&lt;input /&gt;</td>
+                        <td>Applies input text field styles and makes field 100% wide.</td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <a href="" scroll-to="input-number">
+                                <i class="fa fa-arrow-circle-down icon icon--flush"></i>
+                            </a>
+                        </td>
+                        <td><code>.input--number</code></td>
+                        <td>.input</td>
+                        <td>Removes default browser increments/arrows from the field.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="" scroll-to="input-textbox">
+                                <i class="fa fa-arrow-circle-down icon icon--flush"></i>
+                            </a>
+                        </td>
+                        <td><code>.input--textarea</code></td>
+                        <td>.input</td>
+                        <td>Applies a defined height to a text field.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="" scroll-to="input-widths">
+                                <i class="fa fa-arrow-circle-down icon icon--flush"></i>
+                            </a>
+                        </td>
+                        <td><code>.input--micro</code></td>
+                        <td>.input</td>
+                        <td>Applies 100px width to input field.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="" scroll-to="input-widths">
+                                <i class="fa fa-arrow-circle-down icon icon--flush"></i>
+                            </a>
+                        </td>
+                        <td><code>.input--sm</code></td>
+                        <td>.input</td>
+                        <td>Applies 30% width to input field.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="" scroll-to="input-widths">
+                                <i class="fa fa-arrow-circle-down icon icon--flush"></i>
+                            </a>
+                        </td>
+                        <td><code>.input--med</code></td>
+                        <td>.input</td>
+                        <td>Applies 48% width to input field.</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td><code>.input--hasError</code></td>
+                        <td>.input</td>
+                        <td>Applies error styling to the input field.</td>
+                    </tr>                            
+                </tbody>
+            </table>
+
+            <hr />
+
+            <div class="vr--x2">
+                <h3 class="display display--20 display--bold">Default Template:</h3>
+            </div>
+            <!-- BEGIN DEFAULT TEMPLATE -->
+            <input id="textField" placeholder="Placeholder text" class="input input--txt" type="text">
+            <!-- END DEFAULT TEMPLATE -->
+
+            <hr />
+
+            <div class="vr--x2">
+                <h3 class="display display--20 display--bold">Number Input Template:</h3>
+            </div>
+            <!-- BEGIN NUMBER INPUT TEMPLATE -->
+            <input type="number" val="" class="input input--number" /> 
+            <!-- END NUMBER INPUT TEMPLATE -->    
+
+            <hr />
+
+            <div class="vr--x2">
+                <h3 class="display display--20 display--bold">Textbox Template:</h3>
+            </div>
+            <!-- BEGIN TEXTBOX TEMPLATE -->
+            <textarea id="textArea1" class="input input--textarea" name="textAreaText"></textarea> 
+            <!-- END TEXTBOX TEMPLATE -->       
+
+            <hr />
+
+            <div class="vr--x2">
+                <h3 class="display display--20 display--bold">Input Size Template:</h3>
+            </div>
+            <!-- BEGIN INPUT SIZE TEMPLATE -->
+            <input type="text" val="" placeholder="Micro Text Input" class="input input--micro" />
+            <br /><br />
+            <input type="text" val="" placeholder="Small Text Input" class="input input--sm" />
+            <br /><br />
+            <input type="text" val="" placeholder="Medium Text Input" class="input input--med" />
+            <br /><br />
+            <input type="text" val="" placeholder="Default Text Input" class="input" /> 
+            <!-- END INPUT SIZE TEMPLATE -->  
+
+            <hr />
+
+            <div class="vr--x2">
+                <h3 class="display display--20 display--bold">Input (invalid) Template:</h3>
+            </div>
+            <!-- BEGIN INPUT INVALID TEMPLATE -->
+            <input type="text" val="" placeholder="Invalid Text Input" class="input input--hasError" aria-required="true" /> 
+            <!-- END INPUT INVALID TEMPLATE -->  
+            
+            <hr />
+
+            <div class="vr--x2">
+                <h3 class="display display--20 display--bold">Input (disabled) Template:</h3>
+            </div>
+            <!-- BEGIN INPUT DISABLED TEMPLATE -->
+            <input type="text" val="" placeholder="Disabled Text Input" class="input" disabled aria-required="true" /> 
+            <!-- END INPUT DISABLED TEMPLATE -->              
+        </div>	
+    </div>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!--[if lte IE 8 ]> <html class="ie" lang="en"> <![endif]-->
+<!--[if IE 9 ]> <html class="ie ie9" lang="en"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+<title>Allstate User Interface Toolkit Starter Checkboxes Template</title>
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="../assets/styles/app.css" />
+</head>
+<body>
+    <div class="vr">
+        <div class="box">
+            <div class="txt txt--centered">
+                <h1 class="hero__h1">Allstate<sup>&copy;</sup> User Interface Toolkit Checkboxes Template</h1>
+            </div>
+        </div>
+    </div>
+    <div class="vr">
+        <div class="wrapper">
+            <div class="vr--x2">
+                <h3 class="display display--20 display--bold">Appendix:</h3>
+            </div>
+            <table class="table table--appendix">
+                <thead>
+                    <tr>
+                        <th>&nbsp;</th>
+                        <th>Modifier Class</th>
+                        <th>Assign To</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td><code>.option</code></td>
+                        <td>*</td>
+                        <td>Manages formatting of checkbox and associated label.</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td><code>.option__input</code></td>
+                        <td>&lt;input type="checkbox" / &gt;</td>
+                        <td>Hides default checkbox.</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td><code>.option__icon</code></td>
+                        <td>*</td>
+                        <td>Applies styling to element to have checkbox unchecked/checked state.</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td><code>.option__text</code></td>
+                        <td>*</td>
+                        <td>Applies styling to element to have checkbox label text.</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td><code>.option--hasError</code></td>
+                        <td>.option</td>
+                        <td>Applies error styling to the checkbox.</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td><code>.option--disabled</code></td>
+                        <td>.option</td>
+                        <td>Applies disabled styling to the checkbox.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <hr />
+
+            <div class="vr--x2">
+                <h3 class="display display--20 display--bold">Checkbox Template:</h3>
+            </div>
+            <!-- BEGIN CHECKBOX TEMPLATE -->
+            <label class="option" for="option">
+                <input class="option__input" type="checkbox" value="" name="option" id="option" />
+                <span class="option__icon"></span>
+                <span class="option__text">I agree to the <a href="#">terms &amp; conditions</a></span>
+            </label>
+            <!-- END CHECKBOX TEMPLATE -->
+
+            <hr />
+
+            <div class="vr--x2">
+                <h3 class="display display--20 display--bold">Checkbox (invalid) Template:</h3>
+            </div>
+            <!-- BEGIN CHECKBOX INVALID TEMPLATE -->
+            <label class="option option--hasError" for="option--hasError">
+                <input class="option__input" type="checkbox" value="" name="option--hasError" id="option--hasError" />
+                <span class="option__icon"></span>
+                <div class="option__text">I agree to the <a href="#">terms &amp; conditions</a></div>
+            </label>
+            <!-- END CHECKBOX INVALID TEMPLATE -->
+
+
+            <hr />
+
+            <div class="vr--x2">
+                <h3 class="display display--20 display--bold">Checkbox (disabled) Template:</h3>
+            </div>
+            <!-- BEGIN CHECKBOX DISABLED TEMPLATE -->
+            <label class="option option--disabled" for="option--disabled">
+                <input class="option__input" type="checkbox" disabled value="" name="option--disabled" id="option--disabled" />
+                <span class="option__icon"></span>
+                <div class="option__text">I agree to the <a href="#">terms &amp; conditions</a></div>
+            </label>
+            <!-- END CHECKBOX DISABLED TEMPLATE -->
+
+
+            <hr />
+
+            <div class="vr--x2">
+                <h3 class="display display--20 display--bold">Checkbox (disabled selected) Template:</h3>
+            </div>
+            <!-- BEGIN CHECKBOX DISABLED SELECTED TEMPLATE -->
+            <label class="option option--disabledSelected" for="option--disabledSelected">
+                <input class="option__input" type="checkbox" disabled checked value="" name="option--hasError" id="option--disabledSelected" />
+                <span class="option__icon"></span>
+                <div class="option__text">I agree to the <a href="#">terms &amp; conditions</a></div>
+            </label>
+            <!-- END CHECKBOX DISABLED SELECTED TEMPLATE -->
+        </div>
+    </div>
+</body>
+</html>

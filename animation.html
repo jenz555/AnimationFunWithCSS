@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<!--[if lte IE 8 ]> <html class="ie" lang="en"> <![endif]-->
+<!--[if IE 9 ]> <html class="ie ie9" lang="en"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <title>Allstate User Interface Toolkit 3 Column Template</title>
+    <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/app.css" />
+ 
+</head>
+<body>
+    <!-- START RESPONSIVE HEADER -->
+
+    <div class="responsive__header">
+        <div class="flag flag--middle">
+            <div class="flag__hd">
+             <div class="isHidden isVisible--medium">
+                <ul class="hList hList--middle">
+                    <li>
+                        <div class="header__logo icon--ghr--rescue"></div>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="isHidden--medium">
+                <ul class="hList hList--middle">
+                    <li>
+                        <div class="header__logo icon--ghr--rescue"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Horizontal Navigation List -->
+        <div class="flag__ft txt--align-right">
+            <ul id="toggle-nav-2" class="header__mobileUtil">
+                <li>
+                    <button class="hamburger__container">
+                        <span id="hamburger-2" class="hamburger__navicon"></span>Menu
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!--Vertical Navigation List -->
+    <div id="navMenu">
+        <div id="navMenu-vert-2" class="togglePanel nav--hide">
+            <nav role="navigation">
+                <ul class="vList vList--piped navMenu--vert">
+                    <li><a class="nav__link" href="#">CONTACT US</a></li>
+                    <li><a class="nav__link" href="#">FILE A CLAIM</a></li>
+                    <li><a class="nav__link" href="#">WHY ALLSTATE</a></li>
+                    <li><a class="nav__link" href="#">FAQs</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+</div>
+
+<div class="wrapper">
+<!--//CSS animation - using animation-1.scss -->
+<div class="vr"></div>
+<h2 class="vr">CSS Animation with .PNG background images</h2>
+<p>Scene 1</p>
+    <div class="CSS__hero--outer">
+        <div class="CSS__hero--title">Provider En Route</div>
+            <div class="CSS__hero--inner">
+            <div class="CSS__hero--towTruck"></div>
+             
+        </div>
+    </div>
+    <div class="vr--x2"></div>
+
+<!--//CSS animation 2 using animation-2.scss -->
+<div class="vr"></div>
+<p>Scene 2</p>
+    <div class="CSS__hero--outer">
+        <div class="CSS__hero--title">Provider Arrived Onsite</div>
+            <div class="CSS__hero--inner">
+            <div class="CSS__hero--towTruck--2"></div>
+        
+          <div class="CSS__hero--carFamily"></div>
+           <div class="CSS__mechanic--2"></div>
+             
+        </div>
+    </div>
+    <div class="vr--x2"></div>
+<!--//CSS animation-->
+<hr />
+<!--//CSS animation using animation-3.scss -->
+<div class="vr"></div>
+<h2 class="vr">CSS Animation with .SVG background images</h2>
+<p>Scene 1</p>
+<div class="animate__3--container">
+    <div class="animate__3--mid--bkg"></div>
+    <div class="animate__3--fore--bkg"></div>
+    <div class="animate__3--truck"></div>
+    <div class="animate__3--road"></div>
+    <div class="animate__3--title">Provider En Route</div>
+    <div class="animate__3--shadow"></div>
+</div>
+    <div class="vr--x2"></div>
+
+
+    <div class="vr"></div>
+<p>Scene 2</p>
+<div class="animate__3--container">
+    <div class="animate__3--mid--bkg--2"></div>
+    <div class="animate__3--fore--bkg--2"></div>
+    <div class="animate__3--truck--2"></div>
+    <div class="animate__3--mechanic"></div>
+    <div class="animate__3--carFamily"></div>
+    <div class="animate__3--road"></div>
+    <div class="animate__3--title">Provider Onsite</div>
+    <div class="animate__3--shadow"></div>
+</div>
+    <div class="vr--x2"></div>
+<!--//CSS animation 2-->
+<hr />
+
+<!--//GREENSOCK animation-->
+<div class="vr"></div>
+<p>Greensock Animation - using img tags with .svg - not responsive</p>
+
+    <div class="GS__hero--outer">
+    <div class="GS__title">Provider Arrived Onsite</div>
+        <div class="GS__hero--inner">
+          <div class="GS__towTruck"><img src="assets/images/towTruck.svg" ></div>
+           <div class="GS__car"><img src="assets/images/carAndFamily.svg" ></div>
+            <div class="GS__mechanic"><img src="assets/images/mechanic.svg" ></div>
+    </div>
+    
+</div>
+
+</div>
+<script src="assets/scripts/libs/aic-1.6.0.min.js"></script>
+<script src="assets/scripts/libs/greensock/TweenMax.min.js"></script>
+<script src="assets/scripts/libs/greensock/easing/EasePack.min.js"></script>
+<script src="assets/scripts/libs/main.js"></script>
+<script type="text/javascript">
+   $(function () {       
+
+      $('#toggle-nav-2').click(function () {
+        $('#hamburger-2').toggleClass('hamburger__navicon--isActive');
+        $('#navMenu-vert-2').slideToggle('nav--show');
+        return false;
+    });
+  });
+
+// Toggle with hitting of ESC key on Responsive Header with Nav and Hamburger Button
+$(document).keyup(function (e) {
+    if (e.keyCode == 27) {
+        $('#navMenu-vert-2').slideToggle('nav--show');
+        $('#hamburger-2').removeClass('hamburger__navicon--isActive');
+    }
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,4 @@
+http-proxy=http://jhiar:Fatherjoe06@webproxy.igslb.allstate.com:8080
+https-proxy=http://jhiar:Fatherjoe06@webproxy.igslb.allstate.com:8080
+strict-ssl=false
+registry=http://registry.npmjs.org/
